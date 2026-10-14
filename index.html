@@ -781,6 +781,14 @@
             // Project Data for Hero Section (All 45 International Projects)
             const topProjects = [
                 {
+                    image: 'assets/images/yoga4all_1.jpg',
+                    title: 'YOGA4ALL - Vilnius',
+                    description: 'Mentális jóllét, mindfulness és jóga öt ország fiataljaival Litvániában.',
+                    descriptionEn: 'Mental well-being, mindfulness and yoga with youth from five countries in Lithuania.',
+                    category: 'Ifjúsági Csere',
+                    categoryEn: 'Youth Exchange'
+                },
+                {
                     image: 'assets/images/another_brick_1.jpg',
                     title: 'Another Brick - Bédeille',
                     description: 'Hatékony kommunikáció, csoportvezetés és konfliktuskezelési készségek fejlesztése Franciaországban.',
@@ -1257,6 +1265,31 @@
             (function () {
                 const newsItems = [
                     {
+                        title: 'Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással',
+                        titleEn: 'Where is Moscow headed? – Panel discussion with Dr. András Rácz',
+                        date: '2026. szeptember 29.',
+                        dateEn: 'September 29, 2026',
+                        uploadDate: '2026. 10. 14.',
+                        uploadDateEn: 'October 14, 2026',
+                        category: 'Hazai rendezvény · 2026',
+                        categoryEn: 'Domestic event · 2026',
+                        description: 'Fantasztikus hangulatú beszélgetés a Corvinuson! A Magyar Külügyi Intézettel közös pódiumbeszélgetésünk vendége Dr. Rácz András Oroszország-szakértő, az MKI vezérigazgató-helyettese volt...',
+                        descriptionEn: 'A fantastic conversation at Corvinus! Our joint panel discussion with the Hungarian Institute of International Affairs featured Dr. András Rácz, Russia expert and Deputy Director General of the HIIA...',
+                        images: [
+                            'assets/images/events/racz_andras.png',
+                            'assets/images/events/racz_andras_1.jpg',
+                            'assets/images/events/racz_andras_2.jpg',
+                            'assets/images/events/racz_andras_3.jpg',
+                            'assets/images/events/racz_andras_4.jpg',
+                            'assets/images/events/racz_andras_5.jpg',
+                            'assets/images/events/racz_andras_6.jpg'
+                        ],
+                        imgInterval: 5000, // Opcionális: képváltás ideje ms-ban (alapértelmezett: 3000)
+                        link: 'projects/events/racz-andras',
+                        btnText: 'bővebben...',
+                        btnTextEn: 'read more...'
+                    },
+                    {
                         title: 'Milyen Európában fogunk élni? – Kerekasztal-beszélgetés EP-képviselőkkel a Corvinuson',
                         titleEn: 'What Kind of Europe Will We Live In? – Panel Discussion with MEPs at Corvinus',
                         date: '2026. október 16.',
@@ -1272,29 +1305,6 @@
                         ],
                         link: 'projects/events/ep-kerekasztal',
                         applyLink: 'https://www.eventbrite.com/e/erasmus-days-2026-milyen-europaban-fogunk-elni-tickets-2001886818363',
-                        applyBtnText: 'Regisztráció',
-                        applyBtnTextEn: 'Register',
-                        applyBtnIcon: 'fas fa-ticket-alt',
-                        applyBtnClass: 'news-carousel-btn-register',
-                        btnText: 'bővebben...',
-                        btnTextEn: 'read more...'
-                    },
-                    {
-                        title: 'Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással',
-                        titleEn: 'Where is Moscow headed? – Panel discussion with Dr. András Rácz',
-                        date: '2026. szeptember 29.',
-                        dateEn: 'September 29, 2026',
-                        uploadDate: '2026. 09. 16.',
-                        uploadDateEn: 'September 16, 2026',
-                        category: 'Közelgő esemény · 2026',
-                        categoryEn: 'Upcoming event · 2026',
-                        description: 'Az ABOVE Alapítvány a Magyar Külügyi Intézettel együttműködve rendezi meg az őszi félév első kiemelt pódiumbeszélgetését, amelynek vendége Dr. Rácz András Oroszország-szakértő lesz. A részvétel ingyenes, regisztrációhoz kötött.',
-                        descriptionEn: 'The ABOVE Foundation, in collaboration with the Hungarian Institute of International Affairs, is organizing the first featured panel discussion of the autumn semester, with guest Dr. András Rácz, Russia expert. Free entry with registration.',
-                        images: [
-                            'assets/images/events/racz_andras.png'
-                        ],
-                        link: 'projects/events/racz-andras',
-                        applyLink: 'https://www.eventbrite.com/e/merre-tart-moszkva-podiumbeszelgetes-dr-racz-andrassal-tickets-2000249844129',
                         applyBtnText: 'Regisztráció',
                         applyBtnTextEn: 'Register',
                         applyBtnIcon: 'fas fa-ticket-alt',
@@ -1678,12 +1688,14 @@
                     });
 
                     let imgIndex = 0;
+                    const activeItem = newsItems[currentNewsIndex];
+                    const imgDelay = (activeItem && activeItem.imgInterval) || IMG_INTERVAL;
                     const interval = setInterval(() => {
                         if (isPaused) return;
                         imgs[imgIndex].classList.remove('active');
                         imgIndex = (imgIndex + 1) % imgs.length;
                         imgs[imgIndex].classList.add('active');
-                    }, IMG_INTERVAL);
+                    }, imgDelay);
                     imgIntervals.push(interval);
                 }
 

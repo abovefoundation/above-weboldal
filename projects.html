@@ -500,6 +500,21 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="yoga4all">
+                        <div class="relative h-80">
+                            <img src="assets/images/yoga4all_1.jpg" alt="YOGA4ALL"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">YOGA4ALL</h3>
+                                <p class="text-gray-300 text-sm">Litvánia, Vilnius · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="anotherbrick">
                         <div class="relative h-80">
                             <img src="assets/images/another_brick_1.jpg" alt="Another Brick"
@@ -1452,12 +1467,21 @@
 
                     <!-- Event: Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással -->
                     <div class="event-card fade-in" id="eventRaczAndras">
-                        <!-- Image (single) -->
+                        <!-- Image Slideshow -->
                         <div class="event-slideshow" id="raczandrasSlideshow">
                             <img src="assets/images/events/racz_andras.png" alt="Dr. Rácz András pódiumbeszélgetés" class="active">
+                            <img src="assets/images/events/racz_andras_1.jpg" alt="Dr. Rácz András pódiumbeszélgetés 1">
+                            <img src="assets/images/events/racz_andras_2.jpg" alt="Dr. Rácz András pódiumbeszélgetés 2">
+                            <img src="assets/images/events/racz_andras_3.jpg" alt="Dr. Rácz András pódiumbeszélgetés 3">
+                            <img src="assets/images/events/racz_andras_4.jpg" alt="Dr. Rácz András pódiumbeszélgetés 4">
+                            <img src="assets/images/events/racz_andras_5.jpg" alt="Dr. Rácz András pódiumbeszélgetés 5">
+                            <img src="assets/images/events/racz_andras_6.jpg" alt="Dr. Rácz András pódiumbeszélgetés 6">
                             <div class="event-slideshow-label">
                                 <h4>Merre tart Moszkva?</h4>
-                                <p>Közelgő esemény · 2026</p>
+                                <p>Hazai rendezvény · 2026</p>
+                            </div>
+                            <div class="event-progress-bar">
+                                <div class="event-progress-fill" id="raczandrasProgress"></div>
                             </div>
                         </div>
 
@@ -1465,15 +1489,9 @@
                         <div class="event-info">
                             <h3 class="event-title">Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással</h3>
                             <span class="event-date">2026. szeptember 29.</span>
-                            <p class="event-short-desc">Az ABOVE Alapítvány a Magyar Külügyi Intézettel együttműködve rendezi meg az őszi félév első kiemelt pódiumbeszélgetését, amelynek vendége Dr. Rácz András Oroszország-szakértő lesz. A részvétel ingyenes, regisztrációhoz kötött.</p>
-                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.75rem;">
-                                <a href="https://www.eventbrite.com/e/merre-tart-moszkva-podiumbeszelgetes-dr-racz-andrassal-tickets-2000249844129" target="_blank" rel="noopener noreferrer"
-                                    class="event-details-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; background: linear-gradient(135deg, #00D2E5, #00ABA0); color: #fff; border: none; text-decoration: none; box-shadow: 0 4px 15px rgba(0, 210, 229, 0.38);">
-                                    <i class="fas fa-ticket-alt"></i> Regisztráció
-                                </a>
-                                <button class="event-details-btn"
-                                    onclick="navigateTo('events/racz-andras');">bővebben...</button>
-                            </div>
+                            <p class="event-short-desc">Fantasztikus hangulatú beszélgetés a Corvinuson! A Magyar Külügyi Intézettel közös pódiumbeszélgetésünk vendége Dr. Rácz András Oroszország-szakértő, az MKI vezérigazgató-helyettese volt...</p>
+                            <button class="event-details-btn"
+                                onclick="navigateTo('events/racz-andras');">bővebben...</button>
                         </div>
                     </div>
 
@@ -1954,7 +1972,7 @@
                 <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
                     <div class="flex items-center gap-2">
                         <span
-                            class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm font-bold">Közelgő esemény</span>
+                            class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm font-bold">Hazai rendezvény</span>
                         <p class="text-gray-400 text-sm">2026. szeptember 29.</p>
                     </div>
                     <button onclick="copyEventLink('events/racz-andras', this)"
@@ -1966,8 +1984,15 @@
                 <h2 class="text-3xl md:text-4xl font-montserrat font-bold gradient-text mb-6">Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással a Corvinuson</h2>
                 <div class="space-y-6 text-gray-300 leading-relaxed">
                     <div>
-                        <p class="text-lg font-semibold" style="color: #00BCD4;">Megnyílt a regisztráció!</p>
+                        <p class="text-lg font-semibold" style="color: #00BCD4;">Fantasztikus hangulatú beszélgetéssel indítottuk az előző hetet!</p>
                     </div>
+                    <div>
+                        <p>A hét elején a Magyar Külügyi Intézettel szerveztünk közös pódiumbeszélgetést a Corvinuson, ahol Dr. Rácz András Oroszország-szakértő, az MKI vezérigazgató-helyettese volt a vendégünk. Egy rendkívül tartalmas és gondolatébresztő este keretében jártuk körül a friss orosz parlamenti választások belső hatalmi dinamikáit, a régiós és globális geopolitikai következményeket, valamint a megújuló Külügyi Intézet feladatait és kutatási jövőképét.</p>
+                        <p class="mt-3">Külön köszönet nektek az aktivitásért: a kérdezz-felelek szekcióban feltett rengeteg érdekes és releváns kérdés mutatta meg igazán, mekkora igény van az ilyen nyílt, mély szakmai diskurzusokra.</p>
+                        <p class="mt-3">Köszönjük Dr. Rácz Andrásnak a tanulságos beszélgetést, és mindenkinek, aki velünk tartott!</p>
+                        <p class="mt-3">Lapozzátok végig a fotókat az este legjobb pillanataiért, és maradjatok velünk, mert hamarosan érkezik a folytatás!</p>
+                    </div>
+                    <!-- Original announcement (pre-event info) removed after the event:
                     <div>
                         <p>Az ABOVE Alapítvány a Magyar Külügyi Intézettel együttműködve rendezi meg az őszi félév első kiemelt pódiumbeszélgetését, amelynek vendége Dr. Rácz András Oroszország-szakértő, a Magyar Külügyi Intézet vezérigazgató-helyettese lesz.</p>
                         <p class="mt-3">Az esemény fókuszában a 2026-os oroszországi parlamenti választások eredményei, a kibontakozó belső hatalmi dinamikák, valamint azok közép-európai és hazai külpolitikai következményei állnak. A résztvevők első kézből kaphatnak betekintést a megújuló magyar külügyi stratégia feladataiba és kutatási irányaiba is. Az előadást egy 30 perces interaktív Q&A zárja, ahol a hallgatóság közvetlenül teheti fel kérdéseit az előadónak.</p>
@@ -1989,12 +2014,57 @@
                             <span>Regisztráció az Eventbrite-on</span>
                         </a>
                     </div>
+                    -->
 
                     <!-- Photo Gallery -->
                     <div>
                         <h3 class="text-xl font-montserrat font-bold mb-4" style="color: #1099b3;">Fotógaléria</h3>
                         <div class="event-modal-gallery" id="raczandrasGallery">
                             <img src="assets/images/events/racz_andras.png" alt="Dr. Rácz András" loading="lazy">
+                            <img src="assets/images/events/racz_andras_1.jpg" alt="Dr. Rácz András pódiumbeszélgetés 1" loading="lazy">
+                            <img src="assets/images/events/racz_andras_2.jpg" alt="Dr. Rácz András pódiumbeszélgetés 2" loading="lazy">
+                            <img src="assets/images/events/racz_andras_3.jpg" alt="Dr. Rácz András pódiumbeszélgetés 3" loading="lazy">
+                            <img src="assets/images/events/racz_andras_4.jpg" alt="Dr. Rácz András pódiumbeszélgetés 4" loading="lazy">
+                            <img src="assets/images/events/racz_andras_5.jpg" alt="Dr. Rácz András pódiumbeszélgetés 5" loading="lazy">
+                            <img src="assets/images/events/racz_andras_6.jpg" alt="Dr. Rácz András pódiumbeszélgetés 6" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Instagram Embed -->
+                    <div>
+                        <h3 class="text-xl font-montserrat font-bold mb-4" style="color: #1099b3;">Instagram</h3>
+                        <div class="event-instagram-wrapper">
+                            <blockquote class="instagram-media" data-instgrm-captioned
+                                data-instgrm-permalink="https://www.instagram.com/p/DeBwDJngggj/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                data-instgrm-version="14"
+                                style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0 auto; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);">
+                                <div style="padding:16px;">
+                                    <a href="https://www.instagram.com/p/DeBwDJngggj/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <div style="display:flex; flex-direction:row; align-items:center;">
+                                            <div
+                                                style="background-color:#F4F4F4; border-radius:50%; height:40px; margin-right:14px; width:40px;">
+                                            </div>
+                                            <div
+                                                style="display:flex; flex-direction:column; flex-grow:1; justify-content:center;">
+                                                <div
+                                                    style="background-color:#F4F4F4; border-radius:4px; height:14px; margin-bottom:6px; width:100px;">
+                                                </div>
+                                                <div
+                                                    style="background-color:#F4F4F4; border-radius:4px; height:14px; width:60px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding:19% 0;"></div>
+                                        <div style="padding-top:8px;">
+                                            <div
+                                                style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                                View this post on Instagram</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -3344,6 +3414,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/yoga4all_1.jpg',
                 'assets/images/PBA_1.jpg',
                 'assets/images/storytelling_1.jpg',
                 'assets/images/project-reunion.webp',
@@ -3943,6 +4014,22 @@
 
         // Project data
         const projectData = {
+            "yoga4all": {
+                image: "assets/images/yoga4all_1.jpg",
+                objectPosition: "center center",
+                location: "Litvánia, Vilnius",
+                title: "YOGA4ALL",
+                shortDescription: "Augusztus 20. és 28. között Litvániában, Vilniusban vettünk részt a YOGA4ALL Erasmus+ ifjúsági cserén, ahol a mentális jóllét, a mindfulness és a jóga került a középpontba.",
+                description: "Augusztus 20. és 28. között Litvániában, Vilniusban vettünk részt a YOGA4ALL Erasmus+ ifjúsági cserén, ahol a mentális jóllét, a mindfulness és a jóga került a középpontba.\n\nA projekt során öt ország fiataljaival együtt, különböző gyakorlatokon és közös programokon keresztül tanultunk arról, hogyan tehetünk tudatosan a testi-lelki egyensúlyunkért.\n\nA hét során a stressz- és érzelemkezelés, az önbizalom és a reziliencia fejlesztése, valamint a test és az elme közötti kapcsolat tudatosítása is fontos szerepet kapott. A jóga és a mindfulness segítségével olyan egyszerű, a mindennapokban is alkalmazható módszereket ismerhettünk meg, amelyek hozzájárulhatnak egy kiegyensúlyozottabb és tudatosabb életmód kialakításához.\n\nA program nemcsak az önismeretről és a mentális jóllétről szólt, hanem egymás megismeréséről is. A közös feladatok és beszélgetések mellett a kulturális est során betekintést nyerhettünk egymás hagyományaiba, zenéjébe és kultúrájába, miközben új nemzetközi kapcsolatokat is építhettünk.\n\nA rengeteg új tapasztalat és közös élmény mellett a projekt arra is emlékeztetett minket, hogy a rohanó hétköznapokban mennyire fontos időt szánni önmagunkra, figyelni a mentális jóllétünkre, és megtalálni az egyensúlyt a mindennapokban.",
+                gallery: [
+                    "assets/images/yoga4all_1.jpg",
+                    "assets/images/yoga4all_2.jpg",
+                    "assets/images/yoga4all_3.jpg",
+                    "assets/images/yoga4all_4.jpg",
+                    "assets/images/yoga4all_5.jpg",
+                    "assets/images/yoga4all_6.jpg"
+                ]
+            },
             "anotherbrick": {
                 image: "assets/images/another_brick_1.jpg",
                 objectPosition: "center center",
@@ -4900,6 +4987,7 @@
         setupEventSlideshow('fesztivalokSlideshow', 'fesztivalokProgress', 5000);
         setupEventSlideshow('vitezySlideshow', 'vitezyProgress', 3000);
         setupEventSlideshow('szulinapSlideshow', 'szulinapProgress', 5000);
+        setupEventSlideshow('raczandrasSlideshow', 'raczandrasProgress', 5000);
 
         // ── Event Modal: Gallery Lightbox (Fesztiválok, Vitézy & Szülinap) ──────
         (function () {
@@ -4980,7 +5068,13 @@
             }
 
             var raczandrasPhotos = [
-                'assets/images/events/racz_andras.png'
+                'assets/images/events/racz_andras.png',
+                'assets/images/events/racz_andras_1.jpg',
+                'assets/images/events/racz_andras_2.jpg',
+                'assets/images/events/racz_andras_3.jpg',
+                'assets/images/events/racz_andras_4.jpg',
+                'assets/images/events/racz_andras_5.jpg',
+                'assets/images/events/racz_andras_6.jpg'
             ];
             var raczandrasGallery = document.getElementById('raczandrasGallery');
             if (raczandrasGallery) {
@@ -5033,6 +5127,12 @@
                 'assets/images/events/vitezy_5.jpg',
                 'assets/images/events/vitezy_6.jpg',
                 'assets/images/events/racz_andras.png',
+                'assets/images/events/racz_andras_1.jpg',
+                'assets/images/events/racz_andras_2.jpg',
+                'assets/images/events/racz_andras_3.jpg',
+                'assets/images/events/racz_andras_4.jpg',
+                'assets/images/events/racz_andras_5.jpg',
+                'assets/images/events/racz_andras_6.jpg',
                 'assets/images/events/ep_tisza_eu.jpg'
             ];
             var eventsBgImg = document.getElementById('eventsBgImg');
@@ -5121,6 +5221,7 @@
             'Felejthetetlen nyári élmények, ahol játszva tanulhatsz, és életre szóló barátságokat köthetsz a természet ölelésében.':
                 'Unforgettable summer experiences where you can learn through play and make lifelong friendships in the embrace of nature.',
             // Foreign projects view
+            'Litvánia, Vilnius · 2026': 'Lithuania, Vilnius · 2026',
             'Vissza a projektekhez': 'Back to projects',
             'Nemzetközi Projektek\n                    ': 'International Projects\n                    ',
             'Kattints egy projektre a részletek megtekintéséhez': 'Click on a project to view the details',
@@ -5200,6 +5301,13 @@
             '2026. szeptember 29.': '29 September 2026',
             'Az ABOVE Alapítvány a Magyar Külügyi Intézettel együttműködve rendezi meg az őszi félév első kiemelt pódiumbeszélgetését, amelynek vendége Dr. Rácz András Oroszország-szakértő lesz. A részvétel ingyenes, regisztrációhoz kötött.': 'The ABOVE Foundation, in collaboration with the Hungarian Institute of International Affairs, is organizing the first featured panel discussion of the autumn semester, with guest Dr. András Rácz, Russia expert. Participation is free but requires registration.',
             'Közelgő esemény': 'Upcoming event',
+            'Hazai rendezvény': 'Domestic event',
+            'Fantasztikus hangulatú beszélgetés a Corvinuson! A Magyar Külügyi Intézettel közös pódiumbeszélgetésünk vendége Dr. Rácz András Oroszország-szakértő, az MKI vezérigazgató-helyettese volt...': 'A fantastic conversation at Corvinus! Our joint panel discussion with the Hungarian Institute of International Affairs featured Dr. András Rácz, Russia expert and Deputy Director General of the HIIA...',
+            'Fantasztikus hangulatú beszélgetéssel indítottuk az előző hetet!': 'We kicked off last week with a fantastic conversation!',
+            'A hét elején a Magyar Külügyi Intézettel szerveztünk közös pódiumbeszélgetést a Corvinuson, ahol Dr. Rácz András Oroszország-szakértő, az MKI vezérigazgató-helyettese volt a vendégünk. Egy rendkívül tartalmas és gondolatébresztő este keretében jártuk körül a friss orosz parlamenti választások belső hatalmi dinamikáit, a régiós és globális geopolitikai következményeket, valamint a megújuló Külügyi Intézet feladatait és kutatási jövőképét.': 'At the start of the week, together with the Hungarian Institute of International Affairs, we hosted a panel discussion at Corvinus, with Dr. András Rácz, Russia expert and Deputy Director General of the HIIA, as our guest. Over an extremely rich and thought-provoking evening, we explored the internal power dynamics following the recent Russian parliamentary elections, the regional and global geopolitical consequences, and the tasks and research vision of the renewed Institute.',
+            'Külön köszönet nektek az aktivitásért: a kérdezz-felelek szekcióban feltett rengeteg érdekes és releváns kérdés mutatta meg igazán, mekkora igény van az ilyen nyílt, mély szakmai diskurzusokra.': 'Special thanks to all of you for your engagement: the many interesting and relevant questions in the Q&A session truly showed how much demand there is for such open, in-depth professional discussions.',
+            'Köszönjük Dr. Rácz Andrásnak a tanulságos beszélgetést, és mindenkinek, aki velünk tartott!': 'Thank you to Dr. András Rácz for the insightful conversation, and to everyone who joined us!',
+            'Lapozzátok végig a fotókat az este legjobb pillanataiért, és maradjatok velünk, mert hamarosan érkezik a folytatás!': 'Browse through the photos for the best moments of the evening, and stay tuned – the next event is coming soon!',
             'Merre tart Moszkva? – Pódiumbeszélgetés Dr. Rácz Andrással a Corvinuson': 'Where is Moscow headed? – Panel discussion with Dr. András Rácz at Corvinus',
             'Megnyílt a regisztráció!': 'Registration is now open!',
             'Az ABOVE Alapítvány a Magyar Külügyi Intézettel együttműködve rendezi meg az őszi félév első kiemelt pódiumbeszélgetését, amelynek vendége Dr. Rácz András Oroszország-szakértő, a Magyar Külügyi Intézet vezérigazgató-helyettese lesz.': 'The ABOVE Foundation, in collaboration with the Hungarian Institute of International Affairs, is organizing the first featured panel discussion of the autumn semester, with guest Dr. András Rácz, Russia expert and Deputy Director General of the Hungarian Institute of International Affairs.',
@@ -5464,6 +5572,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "yoga4all": {
+                location: "Lithuania, Vilnius",
+                title: "YOGA4ALL",
+                shortDescription: "Between August 20 and 28, we participated in the YOGA4ALL Erasmus+ youth exchange in Vilnius, Lithuania, focusing on mental well-being, mindfulness, and yoga.",
+                description: "Between August 20 and 28, we participated in the YOGA4ALL Erasmus+ youth exchange in Vilnius, Lithuania, focusing on mental well-being, mindfulness, and yoga.\n\nDuring the project, together with young people from five countries, we learned through various exercises and joint activities how to consciously nurture our physical and mental balance.\n\nThroughout the week, stress and emotion management, developing self-confidence and resilience, and raising awareness of the mind-body connection played an important role. Through yoga and mindfulness, we explored simple, everyday methods that can contribute to a more balanced and mindful lifestyle.\n\nThe programme was not only about self-awareness and mental well-being, but also about getting to know one another. Alongside collaborative tasks and discussions, the intercultural evening gave us insight into each other's traditions, music, and culture, while forging new international connections.\n\nIn addition to countless new experiences and shared moments, the project reminded us of how important it is in our fast-paced daily lives to take time for ourselves, care for our mental well-being, and find balance in our everyday routines."
+            },
             "anotherbrick": {
                 location: "France, Bédeille",
                 title: "Another Brick",
