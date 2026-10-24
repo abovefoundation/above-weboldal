@@ -349,13 +349,18 @@
         <div class="news-detail-overlay" id="newsDetailOverlay" style="display:none;">
             <div class="news-detail-card">
                 <button class="news-detail-close" id="newsDetailClose" aria-label="Bezárás">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
                 </button>
                 <h2 class="news-detail-title" id="newsDetailTitle"></h2>
                 <span class="news-detail-date" id="newsDetailDate"></span>
                 <div class="news-detail-body" id="newsDetailBody"></div>
                 <div class="news-detail-actions" id="newsDetailActions" style="margin-top: 1.5rem; display: none;">
-                    <a href="#" id="newsDetailApplyBtn" target="_blank" rel="noopener noreferrer" class="news-carousel-btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <a href="#" id="newsDetailApplyBtn" target="_blank" rel="noopener noreferrer"
+                        class="news-carousel-btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                         <i class="fas fa-paper-plane"></i>
                         <span id="newsDetailApplyText">Jelentkezés a projektre</span>
                     </a>
@@ -771,7 +776,7 @@
 
                 </div>
                 <div class="border-t border-neon-cyan/20 pt-8 text-center text-gray-400">
-                    <p>&copy; 2025 ABOVE Foundation. Minden jog fenntartva.</p>
+                    <p>&copy; 2026 ABOVE Foundation. Minden jog fenntartva.</p>
                 </div>
             </div>
         </footer>
@@ -1561,8 +1566,8 @@
                         if (item.applyLink) {
                             const applyText = lang === 'en' ? (item.applyBtnTextEn || 'Apply now') : (item.applyBtnText || 'Jelentkezés');
                             const isRegistration = (item.applyBtnText && item.applyBtnText.toLowerCase().includes('regisztráció')) ||
-                                                  (item.applyBtnClass && item.applyBtnClass.includes('register')) ||
-                                                  (item.applyBtnIcon && item.applyBtnIcon.includes('ticket'));
+                                (item.applyBtnClass && item.applyBtnClass.includes('register')) ||
+                                (item.applyBtnIcon && item.applyBtnIcon.includes('ticket'));
                             const applyIcon = item.applyBtnIcon || (isRegistration ? 'fas fa-ticket-alt' : 'fas fa-paper-plane text-xs');
                             const customClass = item.applyBtnClass ? ` ${item.applyBtnClass}` : (isRegistration ? ' news-carousel-btn-register' : '');
                             const regInlineStyle = isRegistration ? 'background: linear-gradient(135deg, #00D2E5, #00ABA0); color: #fff; border: none; text-decoration: none;' : '';
@@ -1774,11 +1779,11 @@
             // Close button
             document.getElementById('newsDetailClose').addEventListener('click', closeNewsDetailModal);
             // Click outside to close
-            document.getElementById('newsDetailOverlay').addEventListener('click', function(e) {
+            document.getElementById('newsDetailOverlay').addEventListener('click', function (e) {
                 if (e.target === this) closeNewsDetailModal();
             });
             // Escape key
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
                     const overlay = document.getElementById('newsDetailOverlay');
                     if (overlay.classList.contains('open')) closeNewsDetailModal();

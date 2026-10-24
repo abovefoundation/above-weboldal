@@ -5,10 +5,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z253S3MPDE"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z253S3MPDE');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Z253S3MPDE');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -339,14 +339,14 @@
 
 <body>
     <script>
-        (function () {
-            const saved = localStorage.getItem('theme');
-            if (saved === 'light') {
-                document.body.classList.add('light-mode');
-            } else {
-                document.body.classList.remove('light-mode');
-            }
-        })();
+            (function () {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    document.body.classList.remove('light-mode');
+                }
+            })();
     </script>
 
     <!-- Navigation -->
@@ -362,7 +362,8 @@
                 </a>
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="/" class="text-gray-300 hover:text-neon-cyan transition duration-300">Kezdőlap</a>
-                    <a href="projects" class="text-gray-300 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
+                    <a href="projects"
+                        class="text-gray-300 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
                     <a href="about" class="text-gray-300 hover:text-neon-cyan transition duration-300">Rólunk</a>
                     <a href="contact"
                         class="glass-strong px-6 py-2 rounded-full text-[#00BCD4] hover:bg-[#00BCD4] hover:text-dark-teal transition duration-300 font-semibold">
@@ -376,8 +377,8 @@
                             (function () {
                                 document.currentScript.previousElementSibling.className =
                                     document.body.classList.contains('light-mode') ||
-                                    document.documentElement.classList.contains('light-mode')
-                                    ? 'fas fa-moon' : 'fas fa-sun';
+                                        document.documentElement.classList.contains('light-mode')
+                                        ? 'fas fa-moon' : 'fas fa-sun';
                             })();
                         </script>
                     </button>
@@ -423,7 +424,8 @@
                 </div>
                 <span>Kezdőlap</span>
             </a>
-            <a href="projects" class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
+            <a href="projects"
+                class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
                 <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                     <i class="fas fa-project-diagram"></i>
                 </div>
@@ -435,7 +437,8 @@
                 </div>
                 <span>Rólunk</span>
             </a>
-            <a href="contact" class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
+            <a href="contact"
+                class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
                 <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                     <i class="fas fa-envelope"></i>
                 </div>
@@ -443,7 +446,8 @@
             </a>
         </div>
         <div class="mt-auto pt-10 border-t border-white/10 flex justify-center">
-            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo" class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
+            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo"
+                class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
         </div>
     </div>
 
@@ -486,33 +490,44 @@
 
             <!-- HEADER -->
             <div class="project-card p-5 md:p-6 text-center fade-in relative overflow-hidden">
-                <div class="absolute -right-12 -top-12 w-40 h-40 rounded-full blur-3xl" style="background:rgba(0,188,212,0.12)"></div>
-                <div class="absolute -left-12 -bottom-12 w-40 h-40 rounded-full blur-3xl" style="background:rgba(0,188,212,0.10)"></div>
+                <div class="absolute -right-12 -top-12 w-40 h-40 rounded-full blur-3xl"
+                    style="background:rgba(0,188,212,0.12)"></div>
+                <div class="absolute -left-12 -bottom-12 w-40 h-40 rounded-full blur-3xl"
+                    style="background:rgba(0,188,212,0.10)"></div>
                 <div class="relative z-10">
                     <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
                         style="display:block;margin:0 auto 0.5rem auto;filter:drop-shadow(0 2px 8px rgba(0,188,212,0.4))">
-                        <rect x="18" y="20" width="64" height="72" rx="8" fill="#1a2f35" stroke="#00BCD4" stroke-width="2.5" />
-                        <rect x="36" y="12" width="28" height="16" rx="5" fill="#007a9a" stroke="#8a5a00" stroke-width="1.5" />
+                        <rect x="18" y="20" width="64" height="72" rx="8" fill="#1a2f35" stroke="#00BCD4"
+                            stroke-width="2.5" />
+                        <rect x="36" y="12" width="28" height="16" rx="5" fill="#007a9a" stroke="#8a5a00"
+                            stroke-width="1.5" />
                         <rect x="40" y="10" width="20" height="8" rx="4" fill="#00BCD4" />
-                        <line x1="30" y1="44" x2="70" y2="44" stroke="rgba(0,188,212,0.5)" stroke-width="2" stroke-linecap="round" />
-                        <line x1="30" y1="54" x2="70" y2="54" stroke="rgba(0,188,212,0.5)" stroke-width="2" stroke-linecap="round" />
-                        <line x1="30" y1="64" x2="55" y2="64" stroke="rgba(0,188,212,0.5)" stroke-width="2" stroke-linecap="round" />
+                        <line x1="30" y1="44" x2="70" y2="44" stroke="rgba(0,188,212,0.5)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="30" y1="54" x2="70" y2="54" stroke="rgba(0,188,212,0.5)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="30" y1="64" x2="55" y2="64" stroke="rgba(0,188,212,0.5)" stroke-width="2"
+                            stroke-linecap="round" />
                         <circle cx="72" cy="72" r="14" fill="#00BCD4" />
-                        <path d="M65 72 L70 77 L80 65" stroke="#0f1d21" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M65 72 L70 77 L80 65" stroke="#0f1d21" stroke-width="3" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <h1 class="text-2xl md:text-3xl font-montserrat font-extrabold text-white mb-2 tracking-tight leading-tight">
+                    <h1
+                        class="text-2xl md:text-3xl font-montserrat font-extrabold text-white mb-2 tracking-tight leading-tight">
                         Jelentkezés – <span style="color: #00BCD4;">Eco-friendly Entrepreneurs</span>
                     </h1>
                     <p class="hero-subtitle text-sm leading-relaxed max-w-lg mx-auto">
-                        Töltsd ki az alábbi jelentkezési lapot az Erasmus+ ifjúsági csereprogramra! A tájékoztatóban (Infopack) megjelölt 18 éves korhatárnál fiatalabbak is bátran jelentkezhetnek!
+                        Töltsd ki az alábbi jelentkezési lapot az Erasmus+ ifjúsági csereprogramra! A tájékoztatóban
+                        (Infopack) megjelölt 18 éves korhatárnál fiatalabbak is bátran jelentkezhetnek!
                     </p>
                     <div class="flex flex-wrap justify-center gap-2 mt-3">
                         <span class="info-badge"><i class="fas fa-calendar-alt"></i> 2026. júl. 19–26.</span>
                         <span class="info-badge"><i class="fas fa-map-marker-alt"></i> Budapest, Magyarország</span>
                         <span class="info-badge"><i class="fas fa-rocket"></i> Erasmus+ Csere</span>
-                        <a href="https://www.canva.com/design/DAHBrbbGn8M/Ur_NXsrIiB_ah7wvRQvfDA/view?utm_content=DAHBrbbGn8M&utm_campaign=designshare&utm_medium=link&utm_source=viewer" 
-                           target="_blank" rel="noopener noreferrer" 
-                           class="info-badge hover:bg-[#00BCD4]/30 transition duration-300" style="text-decoration:none">
+                        <a href="https://www.canva.com/design/DAHBrbbGn8M/Ur_NXsrIiB_ah7wvRQvfDA/view?utm_content=DAHBrbbGn8M&utm_campaign=designshare&utm_medium=link&utm_source=viewer"
+                            target="_blank" rel="noopener noreferrer"
+                            class="info-badge hover:bg-[#00BCD4]/30 transition duration-300"
+                            style="text-decoration:none">
                             <i class="fas fa-file-alt"></i>
                             <span>Projekttájékoztató (Infopack) megtekintése</span>
                         </a>
@@ -524,12 +539,13 @@
             <div class="project-card p-6 md:p-8 fade-in" id="form-card">
                 <form id="signup-form" novalidate>
                     <div class="space-y-5">
-                        
+
                         <div class="form-section-title">👤 Személyes adatok</div>
 
                         <div class="form-group">
                             <label class="form-label" for="fullname">Teljes név <span class="req">*</span></label>
-                            <input class="form-input" type="text" id="fullname" name="fullname" placeholder="Kovács Bence" required autocomplete="name">
+                            <input class="form-input" type="text" id="fullname" name="fullname"
+                                placeholder="Kovács Bence" required autocomplete="name">
                         </div>
 
                         <div class="form-grid-2">
@@ -602,88 +618,115 @@
 
                         <div class="form-group">
                             <label class="form-label" for="email">E-mail cím (aktív) <span class="req">*</span></label>
-                            <input class="form-input" type="email" id="email" name="email" placeholder="bence@email.com" required autocomplete="email">
+                            <input class="form-input" type="email" id="email" name="email" placeholder="bence@email.com"
+                                required autocomplete="email">
                         </div>
 
                         <div class="form-grid-2">
                             <div class="form-group">
                                 <label class="form-label" for="phone">Telefonszám <span class="req">*</span></label>
-                                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+36 30 123 4567" required autocomplete="tel">
+                                <input class="form-input" type="tel" id="phone" name="phone"
+                                    placeholder="+36 30 123 4567" required autocomplete="tel">
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="facebook">Facebook profil link (a csoport miatt) <span class="req">*</span></label>
-                                <input class="form-input" type="url" id="facebook" name="facebook" placeholder="https://facebook.com/..." required>
+                                <label class="form-label" for="facebook">Facebook profil link (a csoport miatt) <span
+                                        class="req">*</span></label>
+                                <input class="form-input" type="url" id="facebook" name="facebook"
+                                    placeholder="https://facebook.com/..." required>
                             </div>
                         </div>
 
-                        <hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
+                        <hr
+                            style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
                         <div class="form-section-title">🌍 Lakóhely és Biztosítás</div>
 
                         <div class="space-y-3">
                             <label class="custom-check">
                                 <input type="checkbox" id="residency-check" name="residency-check" required>
-                                <span>Kijelentem, hogy Magyarországon jogszerűen lakóhellyel rendelkező személy vagyok. <span class="text-xs text-gray-400 block">Az Európai Unió által finanszírozott projektben való részvétel feltétele, hogy a résztvevők jogszerű lakóhellyel rendelkezzenek a küldő szervezet országában.</span></span>
+                                <span>Kijelentem, hogy Magyarországon jogszerűen lakóhellyel rendelkező személy vagyok.
+                                    <span class="text-xs text-gray-400 block">Az Európai Unió által finanszírozott
+                                        projektben való részvétel feltétele, hogy a résztvevők jogszerű lakóhellyel
+                                        rendelkezzenek a küldő szervezet országában.</span></span>
                             </label>
 
                             <label class="custom-check">
                                 <input type="checkbox" id="insurance-check" name="insurance-check" required>
-                                <span>Kijelentem, hogy a projekt teljes időtartama alatt – beleértve az utazási napokat is – rendelkezni fogok érvényes Európai Egészségbiztosítási Kártyával (EHIC), vagy érvényes egészségbiztosítással.</span>
+                                <span>Kijelentem, hogy a projekt teljes időtartama alatt – beleértve az utazási napokat
+                                    is – rendelkezni fogok érvényes Európai Egészségbiztosítási Kártyával (EHIC), vagy
+                                    érvényes egészségbiztosítással.</span>
                             </label>
                         </div>
 
-                        <hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
+                        <hr
+                            style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
                         <div class="form-section-title">💡 Motiváció és Egészségügy</div>
 
                         <div class="form-group">
-                            <label class="form-label" for="motivation">Kérjük, néhány mondatban ismertesd a motivációdat és releváns tapasztalataidat (max. 500 karakter) <span class="req">*</span></label>
-                            <textarea class="form-textarea" id="motivation" name="motivation" maxlength="500" placeholder="Miért szeretnél részt venni a projektben? Érdekel-e a fenntartható vállalkozás témaköre?" required></textarea>
+                            <label class="form-label" for="motivation">Kérjük, néhány mondatban ismertesd a motivációdat
+                                és releváns tapasztalataidat (max. 500 karakter) <span class="req">*</span></label>
+                            <textarea class="form-textarea" id="motivation" name="motivation" maxlength="500"
+                                placeholder="Miért szeretnél részt venni a projektben? Érdekel-e a fenntartható vállalkozás témaköre?"
+                                required></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label" for="allergies">Allergiák / Speciális étrend / Különleges igények <span class="req">*</span></label>
-                            <input class="form-input" type="text" id="allergies" name="allergies" placeholder="Pl. Nincs / Vegán / Mogyoróallergia" required>
+                            <label class="form-label" for="allergies">Allergiák / Speciális étrend / Különleges igények
+                                <span class="req">*</span></label>
+                            <input class="form-input" type="text" id="allergies" name="allergies"
+                                placeholder="Pl. Nincs / Vegán / Mogyoróallergia" required>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label" for="emergency-contact">Vészhelyzet esetén értesítendő személy adatai (név, rokoni viszony, e-mail, telefon) <span class="req">*</span></label>
-                            <input class="form-input" type="text" id="emergency-contact" name="emergency-contact" placeholder="Kovács Gábor (Apa), +36 20 987 6543, gabor@email.com" required>
+                            <label class="form-label" for="emergency-contact">Vészhelyzet esetén értesítendő személy
+                                adatai (név, rokoni viszony, e-mail, telefon) <span class="req">*</span></label>
+                            <input class="form-input" type="text" id="emergency-contact" name="emergency-contact"
+                                placeholder="Kovács Gábor (Apa), +36 20 987 6543, gabor@email.com" required>
                         </div>
 
-                        <hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
+                        <hr
+                            style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
                         <div class="form-section-title">⚖️ Nyilatkozatok</div>
 
                         <div class="space-y-4">
                             <label class="custom-check">
                                 <input type="checkbox" id="dissemination-check" name="dissemination-check" required>
-                                <span>Hozzájárulok ahhoz, hogy részt vegyek a projekt alatti és utáni disszeminációs tevékenységekben (fotók/videók készítése, beszámoló megosztása stb.).</span>
+                                <span>Hozzájárulok ahhoz, hogy részt vegyek a projekt alatti és utáni disszeminációs
+                                    tevékenységekben (fotók/videók készítése, beszámoló megosztása stb.).</span>
                             </label>
 
                             <label class="custom-check">
                                 <input type="checkbox" id="infopack-check" name="infopack-check" required>
-                                <span>Elolvastam a projekt tájékoztatóját (Infopack), és megerősítem, hogy megértettem és elfogadom az abban leírt feltételeket.</span>
+                                <span>Elolvastam a projekt tájékoztatóját (Infopack), és megerősítem, hogy megértettem
+                                    és elfogadom az abban leírt feltételeket.</span>
                             </label>
 
                             <label class="custom-check">
                                 <input type="checkbox" id="travel-check" name="travel-check" required>
-                                <span>Megértettem a feltételeket, és kijelentem, hogy elutazom a projekt helyszínére akkor is, ha az Erasmus+ támogatás nem fedezi az utazási költségeim 100%-át.</span>
+                                <span>Megértettem a feltételeket, és kijelentem, hogy elutazom a projekt helyszínére
+                                    akkor is, ha az Erasmus+ támogatás nem fedezi az utazási költségeim 100%-át.</span>
                             </label>
 
                             <label class="custom-check">
                                 <input type="checkbox" id="gdpr-check" name="gdpr-check" required>
-                                <span>Hozzájárulok ahhoz, hogy az ABOVE és a projekt szervezői a jelentkezéshez kapcsolódó személyes adataimat a projekt lebonyolítása érdekében kezeljék és tárolják.</span>
+                                <span>Hozzájárulok ahhoz, hogy az ABOVE és a projekt szervezői a jelentkezéshez
+                                    kapcsolódó személyes adataimat a projekt lebonyolítása érdekében kezeljék és
+                                    tárolják.</span>
                             </label>
                         </div>
 
-                        <hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
+                        <hr
+                            style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,188,212,0.35),transparent);margin:0.5rem 0">
                         <div class="form-section-title">📝 Egyéb</div>
 
                         <div class="form-group">
                             <label class="form-label" for="notes">Megjegyzések, kérdések (opcionális)</label>
-                            <textarea class="form-textarea" id="notes" name="notes" placeholder="Bármilyen további megjegyzés vagy kérdés a szervezők felé..."></textarea>
+                            <textarea class="form-textarea" id="notes" name="notes"
+                                placeholder="Bármilyen további megjegyzés vagy kérdés a szervezők felé..."></textarea>
                         </div>
 
                         <!-- Error Message -->
-                        <div id="form-error" class="hidden p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center font-semibold">
+                        <div id="form-error"
+                            class="hidden p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center font-semibold">
                             Kérjük, töltsd ki az összes kötelező mezőt és fogadd el a nyilatkozatokat!
                         </div>
 
@@ -704,7 +747,8 @@
                 <div class="success-icon text-neon-cyan"><i class="fas fa-check-circle"></i></div>
                 <h2 class="text-3xl font-montserrat font-bold text-white mb-4">Sikeres jelentkezés!</h2>
                 <p class="success-msg text-gray-300 max-w-md mx-auto mb-8">
-                    Köszönjük! A jelentkezésedet sikeresen továbbítottuk a Google Forms rendszerébe. Hamarosan jelentkezünk a megadott e-mail címen.
+                    Köszönjük! A jelentkezésedet sikeresen továbbítottuk a Google Forms rendszerébe. Hamarosan
+                    jelentkezünk a megadott e-mail címen.
                 </p>
                 <a href="future-projects" class="btn-primary">Vissza a projektekhez</a>
             </div>
@@ -719,7 +763,8 @@
                 <div class="flex flex-col items-center md:items-start md:ml-8 lg:ml-12 text-center md:text-left">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4">Közösségi média</h4>
                     <div class="flex justify-center md:justify-start space-x-4">
-                        <a href="https://www.facebook.com/p/ABOVE-Foundation-for-Youth-100089858340481/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.facebook.com/p/ABOVE-Foundation-for-Youth-100089858340481/" target="_blank"
+                            rel="noopener noreferrer"
                             class="social-icon-btn w-10 h-10 bg-gradient-to-r from-neon-cyan to-neon-teal rounded-full flex items-center justify-center text-dark-teal hover:scale-110 shadow-sm transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -731,7 +776,8 @@
                             class="social-icon-btn w-10 h-10 bg-gradient-to-r from-neon-cyan to-neon-teal rounded-full flex items-center justify-center text-dark-teal hover:scale-110 shadow-sm transition duration-300">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://hu.linkedin.com/company/above-youth-foundation" target="_blank" rel="noopener noreferrer"
+                        <a href="https://hu.linkedin.com/company/above-youth-foundation" target="_blank"
+                            rel="noopener noreferrer"
                             class="social-icon-btn w-10 h-10 bg-gradient-to-r from-neon-cyan to-neon-teal rounded-full flex items-center justify-center text-dark-teal hover:scale-110 shadow-sm transition duration-300">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
@@ -740,21 +786,29 @@
                 <div class="hidden md:flex flex-col items-center">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center">Oldalak</h4>
                     <ul class="grid grid-cols-2 gap-x-8 gap-y-3 w-fit text-center">
-                        <li><a href="/" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a></li>
-                        <li><a href="projects" class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a></li>
-                        <li><a href="about" class="text-gray-400 hover:text-neon-cyan transition duration-300">Rólunk</a></li>
-                        <li><a href="contact" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kapcsolat</a></li>
+                        <li><a href="/" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a>
+                        </li>
+                        <li><a href="projects"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
+                        </li>
+                        <li><a href="about"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Rólunk</a></li>
+                        <li><a href="contact"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Kapcsolat</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col items-center md:items-end md:mr-8 lg:mr-12 text-center md:text-right">
-                    <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center md:text-right">Kapcsolat</h4>
+                    <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center md:text-right">
+                        Kapcsolat</h4>
                     <ul class="space-y-2 text-gray-400 flex flex-col items-center md:items-end">
-                        <li><a href="mailto:info@abovefoundation.eu" class="hover:text-neon-cyan transition duration-300"><i class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
+                        <li><a href="mailto:info@abovefoundation.eu"
+                                class="hover:text-neon-cyan transition duration-300"><i
+                                    class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-neon-cyan/20 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 ABOVE Foundation. Minden jog fenntartva.</p>
+                <p>&copy; 2026 ABOVE Foundation. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
@@ -805,7 +859,7 @@
             const btn = document.getElementById('theme-toggle');
             if (!btn) return;
             const icon = btn.querySelector('i');
-            
+
             if (document.body.classList.contains('light-mode')) {
                 icon.className = 'fas fa-moon';
             } else {
@@ -862,7 +916,7 @@
 
             // Construct FormData with specific entry.XXXX IDs
             const formData = new URLSearchParams();
-            
+
             // Text inputs
             formData.append('entry.1363250577', fullName);
             formData.append('entry.676833996_year', dobYear);

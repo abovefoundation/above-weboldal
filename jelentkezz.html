@@ -5,14 +5,15 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z253S3MPDE"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z253S3MPDE');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Z253S3MPDE');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ABOVE Foundation Jelentkezés - Csatlakozz nemzetközi projekjeinkhez, nyári táborainkhoz vagy önkéntes csapatunkhoz!">
+    <meta name="description"
+        content="ABOVE Foundation Jelentkezés - Csatlakozz nemzetközi projekjeinkhez, nyári táborainkhoz vagy önkéntes csapatunkhoz!">
     <title id="page-title-tag">Jelentkezés | ABOVE Foundation</title>
     <link rel="icon" type="image/png" href="/favicon.png?v=2">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2">
@@ -24,7 +25,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -148,9 +151,12 @@
         }
 
         @keyframes pulseGlow {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
             }
+
             50% {
                 box-shadow: 0 0 40px rgba(0, 188, 212, 0.6);
             }
@@ -286,23 +292,23 @@
 
 <body class="">
     <script>
-        (function() {
-            const saved = localStorage.getItem('theme');
-            if (saved === 'dark') {
-                document.body.classList.remove('light-mode');
-            } else if (saved === 'light') {
-                document.body.classList.add('light-mode');
-            } else {
-                const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
-                if (isIndex) {
-                    document.body.classList.add('light-mode');
-                    localStorage.setItem('theme', 'light');
-                } else {
+            (function () {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'dark') {
                     document.body.classList.remove('light-mode');
-                    localStorage.setItem('theme', 'dark');
+                } else if (saved === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+                    if (isIndex) {
+                        document.body.classList.add('light-mode');
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        document.body.classList.remove('light-mode');
+                        localStorage.setItem('theme', 'dark');
+                    }
                 }
-            }
-        })();
+            })();
     </script>
 
     <!-- Navigation -->
@@ -318,7 +324,8 @@
                 </a>
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="/" class="text-gray-300 hover:text-neon-cyan transition duration-300">Kezdőlap</a>
-                    <a href="projects" class="text-gray-300 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
+                    <a href="projects"
+                        class="text-gray-300 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
                     <a href="about" class="text-gray-300 hover:text-neon-cyan transition duration-300">Rólunk</a>
                     <a href="contact" class="text-gray-300 hover:text-neon-cyan transition duration-300">Kapcsolat</a>
                 </div>
@@ -329,8 +336,8 @@
                             (function () {
                                 document.currentScript.previousElementSibling.className =
                                     document.body.classList.contains('light-mode') ||
-                                    document.documentElement.classList.contains('light-mode')
-                                    ? 'fas fa-moon' : 'fas fa-sun';
+                                        document.documentElement.classList.contains('light-mode')
+                                        ? 'fas fa-moon' : 'fas fa-sun';
                             })();
                         </script>
                     </button>
@@ -369,8 +376,7 @@
                 </div>
                 <span>Tevékenységek</span>
             </a>
-            <a href="about"
-                class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
+            <a href="about" class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
                 <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                     <i class="fas fa-info-circle"></i>
                 </div>
@@ -386,7 +392,8 @@
         </div>
 
         <div class="mt-auto pt-10 border-t border-white/10 flex justify-center">
-            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo" class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
+            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo"
+                class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
         </div>
     </div>
 
@@ -400,24 +407,46 @@
             <div id="form-card" class="fade-in">
 
                 <!-- Title Card -->
-                <div class="glass-strong rounded-t-3xl p-6 md:p-10 border border-neon-cyan/30 border-b-0 relative" style="border-top: 4px solid var(--neon-cyan);">
+                <div class="glass-strong rounded-t-3xl p-6 md:p-10 border border-neon-cyan/30 border-b-0 relative"
+                    style="border-top: 4px solid var(--neon-cyan);">
                     <div class="flex flex-col sm:flex-row-reverse sm:items-center justify-between gap-3 mb-5">
-                        <span class="text-xs md:text-sm font-montserrat font-bold px-3.5 py-1 rounded-full bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan self-center sm:self-auto shrink-0 shadow-sm">2026/27/1</span>
-                        <h1 class="text-2xl md:text-3xl font-montserrat font-extrabold gradient-text">Csatlakozz az ABOVE-hoz!</h1>
+                        <span
+                            class="text-xs md:text-sm font-montserrat font-bold px-3.5 py-1 rounded-full bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan self-center sm:self-auto shrink-0 shadow-sm">2026/27/1</span>
+                        <h1 class="text-2xl md:text-3xl font-montserrat font-extrabold gradient-text">Csatlakozz az
+                            ABOVE-hoz!</h1>
                     </div>
                     <div class="text-gray-300 text-sm leading-relaxed space-y-3">
-                        <p>Szeretnél egy olyan közösség része lenni, ahol a fiatalok nem csak beszélnek Európa jövőjéről, hanem aktívan formálják is azt? Az <strong class="text-white">ABOVE</strong> azért jött létre, hogy új perspektívákat nyisson, kritikus gondolkodásra ösztönözzön, és valódi, 21. századi készségekkel ruházza fel a fiatalokat.</p>
-                        <p>Az ABOVE egy fiatalok által alapított, fiatalokért dolgozó szervezet, amely hisz abban, hogy a párbeszéd, az innováció és a cselekvés képes lebontani a határokat – legyenek azok kulturálisak, társadalmiak vagy gondolkodásbeliek. Tagjaink nemzetközi projektekben, képzéseken, workshopokon és közösségépítő eseményeken vehetnek részt, miközben valódi hatást gyakorolnak a környezetükre.</p>
-                        <p>A jelentkezés minden olyan fiatal számára nyitott, aki szeretne fejlődni, új nézőpontokat megismerni és aktívan részt venni egy értékvezérelt közösség munkájában. Nem elvárás, hogy a Corvinus Egyetem hallgatója legyél: az ABOVE-ban hiszünk abban, hogy a sokszínű háttér és a különböző tapasztalatok teszik igazán erőssé a közösséget. Számunkra a motiváció, a nyitottság és az elköteleződés a legfontosabb, nem pedig az, hogy honnan érkezel.</p>
-                        <p>Ha szeretnél fejlődni, kipróbálni magad, és egy inspiráló, ambiciózus csapat tagja lenni, akkor az ABOVE-ban a helyed!</p>
+                        <p>Szeretnél egy olyan közösség része lenni, ahol a fiatalok nem csak beszélnek Európa
+                            jövőjéről, hanem aktívan formálják is azt? Az <strong class="text-white">ABOVE</strong>
+                            azért jött létre, hogy új perspektívákat nyisson, kritikus gondolkodásra ösztönözzön, és
+                            valódi, 21. századi készségekkel ruházza fel a fiatalokat.</p>
+                        <p>Az ABOVE egy fiatalok által alapított, fiatalokért dolgozó szervezet, amely hisz abban, hogy
+                            a párbeszéd, az innováció és a cselekvés képes lebontani a határokat – legyenek azok
+                            kulturálisak, társadalmiak vagy gondolkodásbeliek. Tagjaink nemzetközi projektekben,
+                            képzéseken, workshopokon és közösségépítő eseményeken vehetnek részt, miközben valódi hatást
+                            gyakorolnak a környezetükre.</p>
+                        <p>A jelentkezés minden olyan fiatal számára nyitott, aki szeretne fejlődni, új nézőpontokat
+                            megismerni és aktívan részt venni egy értékvezérelt közösség munkájában. Nem elvárás, hogy a
+                            Corvinus Egyetem hallgatója legyél: az ABOVE-ban hiszünk abban, hogy a sokszínű háttér és a
+                            különböző tapasztalatok teszik igazán erőssé a közösséget. Számunkra a motiváció, a
+                            nyitottság és az elköteleződés a legfontosabb, nem pedig az, hogy honnan érkezel.</p>
+                        <p>Ha szeretnél fejlődni, kipróbálni magad, és egy inspiráló, ambiciózus csapat tagja lenni,
+                            akkor az ABOVE-ban a helyed!</p>
                         <p class="pt-2"><strong class="text-neon-cyan">Fontos időpontok:</strong></p>
                         <p><strong class="text-white">Jelentkezési határidő:</strong> szeptember 25. 23:59</p>
                         <p><strong class="text-white">Infóestek:</strong></p>
-                        <p class="pl-4">1) szeptember 16. 19:00 (<em>Helyszín: Corvinus Egyetem, pontos helyszín: hamarosan</em>)</p>
-                        <p class="pl-4">2) szeptember 24. 19:00 (<em>Helyszín: Corvinus Egyetem, pontos helyszín: hamarosan</em>)</p>
-                        <p><strong class="text-white">Interjúk:</strong> október 1. valamint október 6.-8., 17:00-20:30 között</p>
-                        <p><strong class="text-white">Bevonó tábor:</strong> október 16-18. (<em>Kérjük, ha komolyan gondolod a tagságot, számolj a részvétellel!</em>)</p>
-                        <p class="pt-2">További információkért és betekintésért az ABOVE életébe kövess minket itt:<br>👉 <a href="https://linktr.ee/above_youth" target="_blank" class="text-neon-cyan hover:underline font-semibold">https://linktr.ee/above_youth</a></p>
+                        <p class="pl-4">1) szeptember 16. 19:00 (<em>Helyszín: Corvinus Egyetem, pontos helyszín:
+                                hamarosan</em>)</p>
+                        <p class="pl-4">2) szeptember 24. 19:00 (<em>Helyszín: Corvinus Egyetem, pontos helyszín:
+                                hamarosan</em>)</p>
+                        <p><strong class="text-white">Interjúk:</strong> október 1. valamint október 6.-8., 17:00-20:30
+                            között</p>
+                        <p><strong class="text-white">Bevonó tábor:</strong> október 16-18. (<em>Kérjük, ha komolyan
+                                gondolod a tagságot, számolj a részvétellel!</em>)</p>
+                        <p class="pt-2">További információkért és betekintésért az ABOVE életébe kövess minket
+                            itt:<br>👉 <a href="https://linktr.ee/above_youth" target="_blank"
+                                class="text-neon-cyan hover:underline font-semibold">https://linktr.ee/above_youth</a>
+                        </p>
                         <p class="text-red-400 text-xs pt-3">* Kötelező mező</p>
                     </div>
                 </div>
@@ -429,306 +458,673 @@
                         <span id="step-percent">0%</span>
                     </div>
                     <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
-                        <div id="step-progress" class="h-full rounded-full bg-gradient-to-r from-neon-cyan to-neon-teal transition-all duration-500" style="width: 0%"></div>
+                        <div id="step-progress"
+                            class="h-full rounded-full bg-gradient-to-r from-neon-cyan to-neon-teal transition-all duration-500"
+                            style="width: 0%"></div>
                     </div>
                 </div>
 
                 <form id="google-signup-form" novalidate>
 
                     <!-- ==================== PAGE 1: Személyes adatok ==================== -->
-                    <div class="form-page active glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6" data-page="1">
+                    <div class="form-page active glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6"
+                        data-page="1">
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Név <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-name" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Név <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-name" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">E-mail <span class="text-red-400">*</span></label>
-                            <input type="email" id="field-email" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">E-mail <span
+                                    class="text-red-400">*</span></label>
+                            <input type="email" id="field-email" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Telefonszám <span class="text-red-400">*</span></label>
-                            <input type="tel" id="field-phone" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Telefonszám <span
+                                    class="text-red-400">*</span></label>
+                            <input type="tel" id="field-phone" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Facebook link <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-facebook" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Facebook link <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-facebook" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Életkor <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-age" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Életkor <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-age" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Nem <span class="text-red-400">*</span></label>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Nem <span
+                                    class="text-red-400">*</span></label>
                             <div class="space-y-2 pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="gender" value="Férfi" required class="accent-neon-cyan w-4 h-4"><span>Férfi</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="gender" value="Nő" class="accent-neon-cyan w-4 h-4"><span>Nő</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="gender" value="__other_option__" class="accent-neon-cyan w-4 h-4"><span>Egyéb:</span><input type="text" id="field-gender-other" maxlength="1000" class="ml-1 px-2 py-1 rounded bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-neon-cyan w-40"></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="gender" value="Férfi" required
+                                        class="accent-neon-cyan w-4 h-4"><span>Férfi</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="gender" value="Nő"
+                                        class="accent-neon-cyan w-4 h-4"><span>Nő</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="gender" value="__other_option__"
+                                        class="accent-neon-cyan w-4 h-4"><span>Egyéb:</span><input type="text"
+                                        id="field-gender-other" maxlength="1000"
+                                        class="ml-1 px-2 py-1 rounded bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-neon-cyan w-40"></label>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Egyetem neve <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-university" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Egyetem neve <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-university" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Felvétel éve <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-year" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Felvétel éve <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-year" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Szak megnevezése <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-major" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Szak megnevezése <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-major" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Neptun-kód <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-neptun" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Neptun-kód <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-neptun" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Beszélt nyelvek (legalább középszinten) <span class="text-red-400">*</span></label>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Beszélt nyelvek (legalább
+                                középszinten) <span class="text-red-400">*</span></label>
                             <div class="space-y-2 pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Magyar" class="accent-neon-cyan w-4 h-4"><span>Magyar</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Angol" class="accent-neon-cyan w-4 h-4"><span>Angol</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Német" class="accent-neon-cyan w-4 h-4"><span>Német</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Francia" class="accent-neon-cyan w-4 h-4"><span>Francia</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Spanyol" class="accent-neon-cyan w-4 h-4"><span>Spanyol</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="Olasz" class="accent-neon-cyan w-4 h-4"><span>Olasz</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="languages" value="__other_option__" class="accent-neon-cyan w-4 h-4"><span>Egyéb:</span><input type="text" id="field-lang-other" maxlength="1000" class="ml-1 px-2 py-1 rounded bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-neon-cyan w-40"></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Magyar"
+                                        class="accent-neon-cyan w-4 h-4"><span>Magyar</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Angol"
+                                        class="accent-neon-cyan w-4 h-4"><span>Angol</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Német"
+                                        class="accent-neon-cyan w-4 h-4"><span>Német</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Francia"
+                                        class="accent-neon-cyan w-4 h-4"><span>Francia</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Spanyol"
+                                        class="accent-neon-cyan w-4 h-4"><span>Spanyol</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="Olasz"
+                                        class="accent-neon-cyan w-4 h-4"><span>Olasz</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="languages" value="__other_option__"
+                                        class="accent-neon-cyan w-4 h-4"><span>Egyéb:</span><input type="text"
+                                        id="field-lang-other" maxlength="1000"
+                                        class="ml-1 px-2 py-1 rounded bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-neon-cyan w-40"></label>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Honnan hallottál rólunk? <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-source" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Honnan hallottál rólunk? <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-source" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van olyan ismerősöd/barátod, aki tagja a szervezetünknek? Ha igen, kérjük, add meg a nevét/nevüket. <span class="text-red-400">*</span></label>
-                            <input type="text" id="field-friend" required maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van olyan ismerősöd/barátod,
+                                aki tagja a szervezetünknek? Ha igen, kérjük, add meg a nevét/nevüket. <span
+                                    class="text-red-400">*</span></label>
+                            <input type="text" id="field-friend" required maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <!-- Navigation -->
                         <div class="flex justify-between items-center pt-4">
                             <div></div>
-                            <button type="button" class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
+                            <button type="button"
+                                class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
                         </div>
                     </div>
 
                     <!-- ==================== PAGE 2: Általános kérdések ==================== -->
-                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6" data-page="2" style="display:none;">
+                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6"
+                        data-page="2" style="display:none;">
 
                         <div class="border-b border-neon-cyan/20 pb-3">
                             <h2 class="text-xl font-montserrat font-bold text-white">Általános kérdések</h2>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Milyen szerepben érzed magad erősebbnek: Ötletgazda, szervező, koordinátor, kommunikátor? és miért? <span class="text-red-400">*</span></label>
-                            <textarea id="field-role" rows="4" required maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Milyen szerepben érzed magad
+                                erősebbnek: Ötletgazda, szervező, koordinátor, kommunikátor? és miért? <span
+                                    class="text-red-400">*</span></label>
+                            <textarea id="field-role" rows="4" required maxlength="32000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Ha egy európai város lennél, melyik lennél és miért? <span class="text-red-400">*</span></label>
-                            <textarea id="field-city" rows="4" required maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Ha egy európai város lennél,
+                                melyik lennél és miért? <span class="text-red-400">*</span></label>
+                            <textarea id="field-city" rows="4" required maxlength="32000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van-e bármilyen tapasztalatod videóvágás/videóforgatásban, kreatív anyagok elkészítésében? Ha igen akkor mit csináltál eddig? <span class="text-red-400">*</span></label>
-                            <textarea id="field-media" rows="4" required maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van-e bármilyen tapasztalatod
+                                videóvágás/videóforgatásban, kreatív anyagok elkészítésében? Ha igen akkor mit csináltál
+                                eddig? <span class="text-red-400">*</span></label>
+                            <textarea id="field-media" rows="4" required maxlength="32000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van-e bármilyen tapasztalod eseményszervezésben? Ha igen, akkor milyen esemény szervezésénél segítettél? <span class="text-red-400">*</span></label>
-                            <textarea id="field-events" rows="4" required maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van-e bármilyen tapasztalod
+                                eseményszervezésben? Ha igen, akkor milyen esemény szervezésénél segítettél? <span
+                                    class="text-red-400">*</span></label>
+                            <textarea id="field-events" rows="4" required maxlength="32000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van munkatapasztalatod (és ha igen milyen)? <span class="text-red-400">*</span></label>
-                            <textarea id="field-work" rows="4" required maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Van munkatapasztalatod (és ha
+                                igen milyen)? <span class="text-red-400">*</span></label>
+                            <textarea id="field-work" rows="4" required maxlength="32000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                         </div>
 
                         <div class="flex justify-between items-center pt-4">
-                            <button type="button" class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
-                            <button type="button" class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
+                            <button type="button"
+                                class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
+                            <button type="button"
+                                class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
                         </div>
                     </div>
 
                     <!-- ==================== PAGE 3: Szekcióválasztás ==================== -->
-                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6" data-page="3" style="display:none;">
+                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6"
+                        data-page="3" style="display:none;">
 
                         <div class="border-b border-neon-cyan/20 pb-3">
                             <h2 class="text-xl font-montserrat font-bold text-white">Szekcióválasztás</h2>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Elsődlegesen választott szekció <span class="text-red-400">*</span></label>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Elsődlegesen választott
+                                szekció <span class="text-red-400">*</span></label>
                             <p class="text-xs text-gray-400 mb-3 leading-relaxed">
-                                <strong class="text-white">Community Management:</strong> tagtoborzás és kiválasztás, új tagok integrációja, közösségépítés, tagi elégedettség és külföldi projektrészvételek koordinálása.<br>
-                                <strong class="text-white">Marketing Management:</strong> social media és online kommunikáció, tartalomgyártás, kampányok, weboldal, dizájn és merchandise, valamint céges partnerségek építése.<br>
-                                <strong class="text-white">Partnerships Management:</strong> hazai és nemzetközi partnerkapcsolatok, pályázatírás, Erasmus+ és egyéb projektek menedzsmentje, valamint új finanszírozási és fejlesztési lehetőségek felkutatása.<br>
-                                <strong class="text-white">Events Management:</strong> belső és nyilvános események, tréningek és toborzási megjelenések tervezése és teljes körű megszervezése, valamint együttműködés más diákszervezetekkel.
+                                <strong class="text-white">Community Management:</strong> tagtoborzás és kiválasztás, új
+                                tagok integrációja, közösségépítés, tagi elégedettség és külföldi projektrészvételek
+                                koordinálása.<br>
+                                <strong class="text-white">Marketing Management:</strong> social media és online
+                                kommunikáció, tartalomgyártás, kampányok, weboldal, dizájn és merchandise, valamint
+                                céges partnerségek építése.<br>
+                                <strong class="text-white">Partnerships Management:</strong> hazai és nemzetközi
+                                partnerkapcsolatok, pályázatírás, Erasmus+ és egyéb projektek menedzsmentje, valamint új
+                                finanszírozási és fejlesztési lehetőségek felkutatása.<br>
+                                <strong class="text-white">Events Management:</strong> belső és nyilvános események,
+                                tréningek és toborzási megjelenések tervezése és teljes körű megszervezése, valamint
+                                együttműködés más diákszervezetekkel.
                             </p>
                             <div class="space-y-2 pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec1" value="Partnerships Management" required class="accent-neon-cyan w-4 h-4"><span>Partnerships Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec1" value="Community Management" class="accent-neon-cyan w-4 h-4"><span>Community Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec1" value="Marketing Management" class="accent-neon-cyan w-4 h-4"><span>Marketing Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec1" value="Events Management" class="accent-neon-cyan w-4 h-4"><span>Events Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec1" value="Partnerships Management" required
+                                        class="accent-neon-cyan w-4 h-4"><span>Partnerships Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec1" value="Community Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Community Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec1" value="Marketing Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Marketing Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec1" value="Events Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Events Management</span></label>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Másodlagosan választott szekció <span class="text-red-400">*</span></label>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Másodlagosan választott
+                                szekció <span class="text-red-400">*</span></label>
                             <div class="space-y-2 pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec2" value="Partnerships Management" required class="accent-neon-cyan w-4 h-4"><span>Partnerships Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec2" value="Community Management" class="accent-neon-cyan w-4 h-4"><span>Community Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec2" value="Marketing Management" class="accent-neon-cyan w-4 h-4"><span>Marketing Management</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="sec2" value="Events Management" class="accent-neon-cyan w-4 h-4"><span>Events Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec2" value="Partnerships Management" required
+                                        class="accent-neon-cyan w-4 h-4"><span>Partnerships Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec2" value="Community Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Community Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec2" value="Marketing Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Marketing Management</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="sec2" value="Events Management"
+                                        class="accent-neon-cyan w-4 h-4"><span>Events Management</span></label>
                             </div>
                         </div>
 
                         <div class="flex justify-between items-center pt-4">
-                            <button type="button" class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
-                            <button type="button" class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
+                            <button type="button"
+                                class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
+                            <button type="button"
+                                class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
                         </div>
                     </div>
 
                     <!-- ==================== PAGE 4: Szekció-specifikus kérdések ==================== -->
-                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6" data-page="4" style="display:none;">
+                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6"
+                        data-page="4" style="display:none;">
 
                         <!-- ===== PM Section ===== -->
                         <div id="sec-pm" class="section-questions space-y-6" style="display:none;">
                             <div class="border-b border-neon-cyan/20 pb-3">
-                                <h2 class="text-xl font-montserrat font-bold text-white">Partnerships Management kérdések</h2>
-                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban dolgozik, további információ a projektcsapatokról és a tevékenységükről: <a href="https://abovefoundation.eu/about" target="_blank" class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
+                                <h2 class="text-xl font-montserrat font-bold text-white">Partnerships Management
+                                    kérdések</h2>
+                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban
+                                    dolgozik, további információ a projektcsapatokról és a tevékenységükről: <a
+                                        href="https://abovefoundation.eu/about" target="_blank"
+                                        class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a legszívesebben! (1. - legszívesebben, 6. - legkevésbé szívesen) <span class="text-red-400">*</span></label>
+                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az
+                                    alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a
+                                    legszívesebben! (1. - legszívesebben, 6. - legkevésbé szívesen) <span
+                                        class="text-red-400">*</span></label>
                                 <p class="text-xs text-gray-500 mb-3">Minden helyezést csak egyszer használj fel!</p>
                                 <div class="overflow-x-auto -mx-2 px-2">
                                     <table class="w-full text-xs text-gray-300 border-collapse">
                                         <thead>
                                             <tr>
                                                 <th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.</th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.</th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.</th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.</th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">5.</th>
-                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">6.</th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">5.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">6.
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">PM Hálózat projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-halozat" value="6. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">Nyári tábor projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-nyari" value="6. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">Belföldi pályázatok projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-belfoldi" value="6. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">Piaci láb projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-piaci" value="6. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">Gimik és belföldi partnerek projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-gimik" value="6. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3 text-gray-300">ESC projektcsapat</td><td class="text-center"><input type="radio" name="pm-rank-esc" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-esc" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-esc" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-esc" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-esc" value="5. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="pm-rank-esc" value="6. " class="accent-neon-cyan"></td></tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">PM Hálózat projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-halozat"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">Nyári tábor projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-nyari"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">Belföldi pályázatok projektcsapat
+                                                </td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-belfoldi"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">Piaci láb projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-piaci"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">Gimik és belföldi partnerek
+                                                    projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-gimik"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3 text-gray-300">ESC projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="pm-rank-esc"
+                                                        value="6. " class="accent-neon-cyan"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a választásodat! <span class="text-red-400">*</span></label>
-                                <textarea id="field-pm-reason" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a
+                                    választásodat! <span class="text-red-400">*</span></label>
+                                <textarea id="field-pm-reason" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">A Partnerships Management szekció munkája sokféle feladatból áll (projektötletek kidolgozása, pályázatírás, partnerkapcsolatok építése, projektmenedzsment, rendezvény- és táborszervezés, szervezeti adminisztráció, operatív feladatok, hivatalos ügyintézés, szervezeti fejlesztés). Ezek közül melyik áll hozzád a legközelebb, és miért? <span class="text-red-400">*</span></label>
-                                <textarea id="field-pm-tasks" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">A Partnerships Management
+                                    szekció munkája sokféle feladatból áll (projektötletek kidolgozása, pályázatírás,
+                                    partnerkapcsolatok építése, projektmenedzsment, rendezvény- és táborszervezés,
+                                    szervezeti adminisztráció, operatív feladatok, hivatalos ügyintézés, szervezeti
+                                    fejlesztés). Ezek közül melyik áll hozzád a legközelebb, és miért? <span
+                                        class="text-red-400">*</span></label>
+                                <textarea id="field-pm-tasks" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Mit szeretsz csinálni a szabadidődben az iskola/egyetem mellett? Kérjük, emelj ki néhány olyan tevékenységet, hobbit vagy közösségi szerepvállalást, amely szerinted jól jellemez téged. <span class="text-red-400">*</span></label>
-                                <textarea id="field-pm-hobby" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Mit szeretsz csinálni a
+                                    szabadidődben az iskola/egyetem mellett? Kérjük, emelj ki néhány olyan
+                                    tevékenységet, hobbit vagy közösségi szerepvállalást, amely szerinted jól jellemez
+                                    téged. <span class="text-red-400">*</span></label>
+                                <textarea id="field-pm-hobby" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
                         </div>
 
                         <!-- ===== CM Section ===== -->
                         <div id="sec-cm" class="section-questions space-y-6" style="display:none;">
                             <div class="border-b border-neon-cyan/20 pb-3">
-                                <h2 class="text-xl font-montserrat font-bold text-white">Community Management kérdések</h2>
-                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban dolgozik, további információ: <a href="https://abovefoundation.eu/about" target="_blank" class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
+                                <h2 class="text-xl font-montserrat font-bold text-white">Community Management kérdések
+                                </h2>
+                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban
+                                    dolgozik, további információ: <a href="https://abovefoundation.eu/about"
+                                        target="_blank"
+                                        class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a legszívesebben! (1. - legszívesebben, 5. - legkevésbé szívesen) <span class="text-red-400">*</span></label>
+                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az
+                                    alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a
+                                    legszívesebben! (1. - legszívesebben, 5. - legkevésbé szívesen) <span
+                                        class="text-red-400">*</span></label>
                                 <p class="text-xs text-gray-500 mb-3">Minden helyezést csak egyszer használj fel!</p>
                                 <div class="overflow-x-auto -mx-2 px-2">
                                     <table class="w-full text-xs text-gray-300 border-collapse">
-                                        <thead><tr><th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">5.</th></tr></thead>
+                                        <thead>
+                                            <tr>
+                                                <th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">5.
+                                                </th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Akkreditációs projektcsapat</td><td class="text-center"><input type="radio" name="cm-rank-akkred" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-akkred" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-akkred" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-akkred" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-akkred" value="5. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">HR projektcsapat</td><td class="text-center"><input type="radio" name="cm-rank-hr" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hr" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hr" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hr" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hr" value="5. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Hírlevél és naptár projektcsapat</td><td class="text-center"><input type="radio" name="cm-rank-hirlevel" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hirlevel" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hirlevel" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hirlevel" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-hirlevel" value="5. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Projekttoborzás projektcsapat</td><td class="text-center"><input type="radio" name="cm-rank-toborz" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-toborz" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-toborz" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-toborz" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-toborz" value="5. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Csapatépítés projektcsapat</td><td class="text-center"><input type="radio" name="cm-rank-csapat" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-csapat" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-csapat" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-csapat" value="4. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="cm-rank-csapat" value="5. " class="accent-neon-cyan"></td></tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Akkreditációs projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-akkred"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-akkred"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-akkred"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-akkred"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-akkred"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">HR projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hr" value="1."
+                                                        class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hr"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hr"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hr"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hr"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Hírlevél és naptár projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hirlevel"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hirlevel"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hirlevel"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hirlevel"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-hirlevel"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Projekttoborzás projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-toborz"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-toborz"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-toborz"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-toborz"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-toborz"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Csapatépítés projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-csapat"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-csapat"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-csapat"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-csapat"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="cm-rank-csapat"
+                                                        value="5. " class="accent-neon-cyan"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a választásodat! <span class="text-red-400">*</span></label>
-                                <textarea id="field-cm-reason" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a
+                                    választásodat! <span class="text-red-400">*</span></label>
+                                <textarea id="field-cm-reason" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Milyen tapasztalatod van adminisztratív, koordinációs vagy csapatépítő jellegű tevékenységek kapcsán? (Melyik áll hozzád legközelebb és miért?) <span class="text-red-400">*</span></label>
-                                <textarea id="field-cm-admin" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Milyen tapasztalatod van
+                                    adminisztratív, koordinációs vagy csapatépítő jellegű tevékenységek kapcsán? (Melyik
+                                    áll hozzád legközelebb és miért?) <span class="text-red-400">*</span></label>
+                                <textarea id="field-cm-admin" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Hogyan próbálnád megoldani, ha a tagság részéről inaktivitás fogad egy feladat kapcsán? (Milyen kommunikációt választanál, miként próbálnád motiválni vagy büntetni a tagságot és hogyan hatna ez rád?) <span class="text-red-400">*</span></label>
-                                <textarea id="field-cm-inactive" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Hogyan próbálnád
+                                    megoldani, ha a tagság részéről inaktivitás fogad egy feladat kapcsán? (Milyen
+                                    kommunikációt választanál, miként próbálnád motiválni vagy büntetni a tagságot és
+                                    hogyan hatna ez rád?) <span class="text-red-400">*</span></label>
+                                <textarea id="field-cm-inactive" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
                         </div>
 
                         <!-- ===== MM Section ===== -->
                         <div id="sec-mm" class="section-questions space-y-6" style="display:none;">
                             <div class="border-b border-neon-cyan/20 pb-3">
-                                <h2 class="text-xl font-montserrat font-bold text-white">Marketing Management kérdések</h2>
-                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban dolgozik, további információ: <a href="https://abovefoundation.eu/about" target="_blank" class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
+                                <h2 class="text-xl font-montserrat font-bold text-white">Marketing Management kérdések
+                                </h2>
+                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban
+                                    dolgozik, további információ: <a href="https://abovefoundation.eu/about"
+                                        target="_blank"
+                                        class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a legszívesebben! (1. - legszívesebben, 4. - legkevésbé szívesen) <span class="text-red-400">*</span></label>
+                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az
+                                    alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a
+                                    legszívesebben! (1. - legszívesebben, 4. - legkevésbé szívesen) <span
+                                        class="text-red-400">*</span></label>
                                 <p class="text-xs text-gray-500 mb-3">Minden helyezést csak egyszer használj fel!</p>
                                 <div class="overflow-x-auto -mx-2 px-2">
                                     <table class="w-full text-xs text-gray-300 border-collapse">
-                                        <thead><tr><th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.</th></tr></thead>
+                                        <thead>
+                                            <tr>
+                                                <th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.
+                                                </th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Videóvágás és videóforgatás projektcsapat</td><td class="text-center"><input type="radio" name="mm-rank-video" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-video" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-video" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-video" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Social Media projektcsapat</td><td class="text-center"><input type="radio" name="mm-rank-social" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-social" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-social" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-social" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Weboldal és Tech projektcsapat</td><td class="text-center"><input type="radio" name="mm-rank-web" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-web" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-web" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-web" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Termékszponzorációs projektcsapat</td><td class="text-center"><input type="radio" name="mm-rank-szponz" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-szponz" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-szponz" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="mm-rank-szponz" value="4. " class="accent-neon-cyan"></td></tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Videóvágás és videóforgatás projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-video"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-video"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-video"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-video"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Social Media projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-social"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-social"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-social"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-social"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Weboldal és Tech projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-web"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-web"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-web"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-web"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Termékszponzorációs projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-szponz"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-szponz"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-szponz"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="mm-rank-szponz"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a választásodat! <span class="text-red-400">*</span></label>
-                                <textarea id="field-mm-reason" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a
+                                    választásodat! <span class="text-red-400">*</span></label>
+                                <textarea id="field-mm-reason" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Ha korlátlan időd és eszközöd lenne, mit készítenél, amivel online sok emberhez el tudnál jutni? <span class="text-red-400">*</span></label>
-                                <textarea id="field-mm-idea" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Ha korlátlan időd és
+                                    eszközöd lenne, mit készítenél, amivel online sok emberhez el tudnál jutni? <span
+                                        class="text-red-400">*</span></label>
+                                <textarea id="field-mm-idea" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Hogyan mutatnál be vizuálisan egy eseményt, ötletet vagy értéket úgy, hogy az szöveg nélkül is érthető és figyelemfelkeltő legyen? <span class="text-red-400">*</span></label>
-                                <textarea id="field-mm-visual" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Hogyan mutatnál be
+                                    vizuálisan egy eseményt, ötletet vagy értéket úgy, hogy az szöveg nélkül is érthető
+                                    és figyelemfelkeltő legyen? <span class="text-red-400">*</span></label>
+                                <textarea id="field-mm-visual" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
                         </div>
 
@@ -736,84 +1132,174 @@
                         <div id="sec-em" class="section-questions space-y-6" style="display:none;">
                             <div class="border-b border-neon-cyan/20 pb-3">
                                 <h2 class="text-xl font-montserrat font-bold text-white">Events Management kérdések</h2>
-                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban dolgozik, további információ: <a href="https://abovefoundation.eu/about" target="_blank" class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
+                                <p class="text-xs text-gray-400 mt-1">Az ABOVE összes szekciója projektcsapatokban
+                                    dolgozik, további információ: <a href="https://abovefoundation.eu/about"
+                                        target="_blank"
+                                        class="text-neon-cyan hover:underline">https://abovefoundation.eu/about</a></p>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a legszívesebben! (1. - legszívesebben, 4. - legkevésbé szívesen) <span class="text-red-400">*</span></label>
+                                <label class="block text-sm font-semibold text-gray-200 mb-3">Kérjük, rangsorold az
+                                    alábbi szekciós projektcsapatokat aszerint, hogy melyikben dolgoznál a
+                                    legszívesebben! (1. - legszívesebben, 4. - legkevésbé szívesen) <span
+                                        class="text-red-400">*</span></label>
                                 <p class="text-xs text-gray-500 mb-3">Minden helyezést csak egyszer használj fel!</p>
                                 <div class="overflow-x-auto -mx-2 px-2">
                                     <table class="w-full text-xs text-gray-300 border-collapse">
-                                        <thead><tr><th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.</th><th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.</th></tr></thead>
+                                        <thead>
+                                            <tr>
+                                                <th class="text-left py-2 pr-3 font-normal text-gray-500 w-48"></th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">1.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">2.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">3.
+                                                </th>
+                                                <th class="text-center py-2 px-2 font-semibold text-gray-400 w-12">4.
+                                                </th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Belső képzések projektcsapat</td><td class="text-center"><input type="radio" name="em-rank-belso" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-belso" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-belso" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-belso" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">Nyílt események projektcsapat</td><td class="text-center"><input type="radio" name="em-rank-nyilt" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-nyilt" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-nyilt" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-nyilt" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">CERV projektcsapat</td><td class="text-center"><input type="radio" name="em-rank-cerv" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-cerv" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-cerv" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-cerv" value="4. " class="accent-neon-cyan"></td></tr>
-                                            <tr class="border-t border-white/5"><td class="py-3 pr-3">HÖK és DSZ események projektcsapat</td><td class="text-center"><input type="radio" name="em-rank-hok" value="1." class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-hok" value="2. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-hok" value="3. " class="accent-neon-cyan"></td><td class="text-center"><input type="radio" name="em-rank-hok" value="4. " class="accent-neon-cyan"></td></tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Belső képzések projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="em-rank-belso"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-belso"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-belso"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-belso"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">Nyílt események projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="em-rank-nyilt"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-nyilt"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-nyilt"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-nyilt"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">CERV projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="em-rank-cerv"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-cerv"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-cerv"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-cerv"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
+                                            <tr class="border-t border-white/5">
+                                                <td class="py-3 pr-3">HÖK és DSZ események projektcsapat</td>
+                                                <td class="text-center"><input type="radio" name="em-rank-hok"
+                                                        value="1." class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-hok"
+                                                        value="2. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-hok"
+                                                        value="3. " class="accent-neon-cyan"></td>
+                                                <td class="text-center"><input type="radio" name="em-rank-hok"
+                                                        value="4. " class="accent-neon-cyan"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a választásodat! <span class="text-red-400">*</span></label>
-                                <textarea id="field-em-reason" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Kérlek indokold meg a
+                                    választásodat! <span class="text-red-400">*</span></label>
+                                <textarea id="field-em-reason" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Idézz fel egy rendezvényt vagy eseményt, amin korábban részt vettél! Mi volt az az egy szervezői hiba vagy hiányosság, amit kiszúrtál, és írd le, te hogyan oldottad volna meg a problémát! <span class="text-red-400">*</span></label>
-                                <textarea id="field-em-event" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Idézz fel egy rendezvényt
+                                    vagy eseményt, amin korábban részt vettél! Mi volt az az egy szervezői hiba vagy
+                                    hiányosság, amit kiszúrtál, és írd le, te hogyan oldottad volna meg a problémát!
+                                    <span class="text-red-400">*</span></label>
+                                <textarea id="field-em-event" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-gray-200 mb-2">Tervezz meg egy saját eseményt a Corvinusra az ABOVE csapat tagjaként! Mi lenne a rendezvény témája, kit hívnál meg előadónak, és miért pont őt? <span class="text-red-400">*</span></label>
-                                <textarea id="field-em-plan" rows="4" maxlength="32000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
+                                <label class="block text-sm font-semibold text-gray-200 mb-2">Tervezz meg egy saját
+                                    eseményt a Corvinusra az ABOVE csapat tagjaként! Mi lenne a rendezvény témája, kit
+                                    hívnál meg előadónak, és miért pont őt? <span class="text-red-400">*</span></label>
+                                <textarea id="field-em-plan" rows="4" maxlength="32000"
+                                    class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300 resize-y"></textarea>
                             </div>
                         </div>
 
                         <div class="flex justify-between items-center pt-4">
-                            <button type="button" class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
-                            <button type="button" class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
+                            <button type="button"
+                                class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
+                            <button type="button"
+                                class="btn-next bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm">Következő</button>
                         </div>
                     </div>
 
                     <!-- ==================== PAGE 5: Záró szakasz ==================== -->
-                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6" data-page="5" style="display:none;">
+                    <div class="form-page glass-strong rounded-b-3xl p-6 md:p-10 border border-neon-cyan/30 border-t-0 space-y-6"
+                        data-page="5" style="display:none;">
 
                         <div class="border-b border-neon-cyan/20 pb-3">
                             <h2 class="text-xl font-montserrat font-bold text-white">Záró szakasz</h2>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Interjúk – Kérjük, jelezd az elérhetőségedet az összes olyan időponton, amin ráérsz! <span class="text-red-400">*</span></label>
-                            <p class="text-xs text-gray-400 mb-3">Note: Az interjúk 17:00 és 20:30 között zajlanak le, kérlek ha látod, hogy a megadott időablakban valamikor nem érsz rá, azt a kérdés alatti kommentben jelezd!</p>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Interjúk – Kérjük, jelezd az
+                                elérhetőségedet az összes olyan időponton, amin ráérsz! <span
+                                    class="text-red-400">*</span></label>
+                            <p class="text-xs text-gray-400 mb-3">Note: Az interjúk 17:00 és 20:30 között zajlanak le,
+                                kérlek ha látod, hogy a megadott időablakban valamikor nem érsz rá, azt a kérdés alatti
+                                kommentben jelezd!</p>
                             <div class="space-y-2 pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="interviews" value="Október 1. - Csütörtök" class="accent-neon-cyan w-4 h-4"><span>Október 1. - Csütörtök</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="interviews" value="Október 6. - Kedd" class="accent-neon-cyan w-4 h-4"><span>Október 6. - Kedd</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="interviews" value="Október 7. - Szerda" class="accent-neon-cyan w-4 h-4"><span>Október 7. - Szerda</span></label>
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="checkbox" name="interviews" value="Október 8. - Csütörtök" class="accent-neon-cyan w-4 h-4"><span>Október 8. - Csütörtök</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="interviews" value="Október 1. - Csütörtök"
+                                        class="accent-neon-cyan w-4 h-4"><span>Október 1. - Csütörtök</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="interviews" value="Október 6. - Kedd"
+                                        class="accent-neon-cyan w-4 h-4"><span>Október 6. - Kedd</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="interviews" value="Október 7. - Szerda"
+                                        class="accent-neon-cyan w-4 h-4"><span>Október 7. - Szerda</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="checkbox" name="interviews" value="Október 8. - Csütörtök"
+                                        class="accent-neon-cyan w-4 h-4"><span>Október 8. - Csütörtök</span></label>
                             </div>
                         </div>
 
                         <div>
                             <label class="block text-sm font-semibold text-gray-200 mb-2">Komment</label>
-                            <input type="text" id="field-comments" maxlength="1000" class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
+                            <input type="text" id="field-comments" maxlength="1000"
+                                class="form-input w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-neon-cyan transition duration-300">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2">Hozzájárulsz ahhoz, hogy az ABOVE a kiválasztási folyamattal és az esetleges jövőbeni tagságoddal kapcsolatban kezelje az adataidat? <span class="text-red-400">*</span></label>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">Hozzájárulsz ahhoz, hogy az
+                                ABOVE a kiválasztási folyamattal és az esetleges jövőbeni tagságoddal kapcsolatban
+                                kezelje az adataidat? <span class="text-red-400">*</span></label>
                             <div class="pl-1">
-                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input type="radio" name="gdpr" value="Igen" required class="accent-neon-cyan w-4 h-4"><span>Igen</span></label>
+                                <label class="flex items-center gap-3 text-sm text-gray-300 cursor-pointer"><input
+                                        type="radio" name="gdpr" value="Igen" required
+                                        class="accent-neon-cyan w-4 h-4"><span>Igen</span></label>
                             </div>
                         </div>
 
-                        <div id="form-error-msg" class="hidden p-4 rounded-xl bg-red-500/20 border border-red-500/40 text-red-300 text-sm font-semibold text-center">
+                        <div id="form-error-msg"
+                            class="hidden p-4 rounded-xl bg-red-500/20 border border-red-500/40 text-red-300 text-sm font-semibold text-center">
                             Kérjük, töltsd ki az Összes kötelezően megadandó (*) mezőt!
                         </div>
 
                         <div class="flex justify-between items-center pt-4">
-                            <button type="button" class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
-                            <button type="submit" id="submit-btn" class="bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm flex items-center gap-2">
+                            <button type="button"
+                                class="btn-prev text-neon-cyan font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-white/5 transition duration-300 text-sm">Vissza</button>
+                            <button type="submit" id="submit-btn"
+                                class="bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal font-montserrat font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-neon-cyan/30 transition duration-300 text-sm flex items-center gap-2">
                                 <span>Küldés</span>
                             </button>
                         </div>
@@ -824,18 +1310,24 @@
 
             <!-- Success Card -->
             <div id="form-success" class="hidden fade-in">
-                <div class="glass-strong rounded-3xl p-8 md:p-12 text-center max-w-xl mx-auto shadow-2xl border border-neon-cyan/30">
-                    <div class="w-20 h-20 rounded-full bg-neon-cyan/20 border-2 border-neon-cyan flex items-center justify-center mx-auto mb-6 text-neon-cyan text-4xl pulse-glow">
+                <div
+                    class="glass-strong rounded-3xl p-8 md:p-12 text-center max-w-xl mx-auto shadow-2xl border border-neon-cyan/30">
+                    <div
+                        class="w-20 h-20 rounded-full bg-neon-cyan/20 border-2 border-neon-cyan flex items-center justify-center mx-auto mb-6 text-neon-cyan text-4xl pulse-glow">
                         <i class="fas fa-check"></i>
                     </div>
                     <div class="mb-4">
-                        <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-bold text-xs uppercase tracking-wider">
+                        <span
+                            class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-bold text-xs uppercase tracking-wider">
                             <i class="fas fa-check-circle"></i> Elküldve
                         </span>
                     </div>
                     <h2 class="text-3xl font-montserrat font-bold text-white mb-4">Sikeres Jelentkezés!</h2>
-                    <p class="text-gray-300 text-base leading-relaxed mb-8">Köszönjük! A jelentkezési lapodat és a válaszaidat sikeresen elküldtük. Hamarosan felvesszük veled a kapcsolatot a megadott e-mail címen.</p>
-                    <a href="/" class="inline-flex items-center gap-2 bg-neon-cyan text-dark-teal px-8 py-3.5 rounded-full font-bold hover:bg-white transition duration-300 text-sm shadow-md">
+                    <p class="text-gray-300 text-base leading-relaxed mb-8">Köszönjük! A jelentkezési lapodat és a
+                        válaszaidat sikeresen elküldtük. Hamarosan felvesszük veled a kapcsolatot a megadott e-mail
+                        címen.</p>
+                    <a href="/"
+                        class="inline-flex items-center gap-2 bg-neon-cyan text-dark-teal px-8 py-3.5 rounded-full font-bold hover:bg-white transition duration-300 text-sm shadow-md">
                         <i class="fas fa-home"></i>
                         <span>Vissza a kezdőlapra</span>
                     </a>
@@ -851,8 +1343,8 @@
                 <div class="flex flex-col items-center md:items-start md:ml-8 lg:ml-12 text-center md:text-left">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4">Közösségi média</h4>
                     <div class="flex justify-center md:justify-start space-x-4">
-                        <a href="https://www.facebook.com/p/ABOVE-Foundation-for-Youth-100089858340481/"
-                            target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.facebook.com/p/ABOVE-Foundation-for-Youth-100089858340481/" target="_blank"
+                            rel="noopener noreferrer"
                             class="social-icon-btn w-10 h-10 bg-gradient-to-r from-neon-cyan to-neon-teal rounded-full flex items-center justify-center text-dark-teal hover:scale-110 shadow-sm transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -874,23 +1366,32 @@
                 <div class="hidden md:flex flex-col items-center">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center">Oldalak</h4>
                     <ul class="grid grid-cols-2 gap-x-8 gap-y-3 w-fit text-center">
-                        <li><a href="/" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a></li>
-                        <li><a href="projects" class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a></li>
-                        <li><a href="about" class="text-gray-400 hover:text-neon-cyan transition duration-300">Rólunk</a></li>
-                        <li><a href="jelentkezz" class="text-gray-400 hover:text-neon-cyan transition duration-300">Jelentkezés</a></li>
-                        <li><a href="contact" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kapcsolat</a></li>
+                        <li><a href="/" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a>
+                        </li>
+                        <li><a href="projects"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
+                        </li>
+                        <li><a href="about"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Rólunk</a></li>
+                        <li><a href="jelentkezz"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Jelentkezés</a></li>
+                        <li><a href="contact"
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Kapcsolat</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col items-center md:items-end md:mr-8 lg:mr-12 text-center md:text-right">
-                    <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center md:text-right">Kapcsolat</h4>
+                    <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center md:text-right">
+                        Kapcsolat</h4>
                     <ul class="space-y-2 text-gray-400 flex flex-col items-center md:items-end">
-                        <li><a href="mailto:info@abovefoundation.eu" class="hover:text-neon-cyan transition duration-300"><i class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
+                        <li><a href="mailto:info@abovefoundation.eu"
+                                class="hover:text-neon-cyan transition duration-300"><i
+                                    class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-neon-cyan/20 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 ABOVE Foundation. Minden jog fenntartva.</p>
+                <p>&copy; 2026 ABOVE Foundation. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
@@ -1077,10 +1578,10 @@
                 }
             }
 
-            window.clearSignupDraft = function() {
+            window.clearSignupDraft = function () {
                 try {
                     localStorage.removeItem(DRAFT_KEY);
-                } catch(e) {}
+                } catch (e) { }
             };
 
             function getPageErrorContainer(pageEl) {
@@ -1295,7 +1796,7 @@
                 });
             });
 
-            window.validateAllPages = function() {
+            window.validateAllPages = function () {
                 for (let i = 1; i <= totalPages; i++) {
                     if (!validatePage(i)) {
                         showPage(i);
@@ -1500,7 +2001,7 @@
                 try {
                     localStorage.setItem(SUBMITTED_KEY, 'true');
                     if (window.clearSignupDraft) window.clearSignupDraft();
-                } catch(e) {}
+                } catch (e) { }
 
                 // Send via fetch (no-cors)
                 try {
@@ -1512,7 +2013,7 @@
                     }).catch(err => {
                         console.error('Fetch submit error:', err);
                     });
-                } catch(e) {
+                } catch (e) {
                     console.error('Fetch exception:', e);
                 }
 
@@ -1554,4 +2055,3 @@
 </body>
 
 </html>
-

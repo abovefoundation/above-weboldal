@@ -5,10 +5,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z253S3MPDE"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z253S3MPDE');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Z253S3MPDE');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,12 +135,15 @@
             background: rgba(255, 255, 255, 0.88) !important;
             border-color: rgba(0, 188, 212, 0.4) !important;
         }
+
         body.light-mode .project-card h3 {
             color: #0f1d21 !important;
         }
+
         body.light-mode .project-card p {
             color: #334155 !important;
         }
+
         body.light-mode .project-card .text-gray-400 {
             color: #475569 !important;
         }
@@ -151,23 +154,23 @@
 
 <body class="">
     <script>
-        (function() {
-            const saved = localStorage.getItem('theme');
-            if (saved === 'dark') {
-                document.body.classList.remove('light-mode');
-            } else if (saved === 'light') {
-                document.body.classList.add('light-mode');
-            } else {
-                const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
-                if (isIndex) {
-                    document.body.classList.add('light-mode');
-                    localStorage.setItem('theme', 'light');
-                } else {
+            (function () {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'dark') {
                     document.body.classList.remove('light-mode');
-                    localStorage.setItem('theme', 'dark');
+                } else if (saved === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+                    if (isIndex) {
+                        document.body.classList.add('light-mode');
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        document.body.classList.remove('light-mode');
+                        localStorage.setItem('theme', 'dark');
+                    }
                 }
-            }
-        })();
+            })();
     </script>
 
     <!-- Navigation -->
@@ -199,8 +202,8 @@
                             (function () {
                                 document.currentScript.previousElementSibling.className =
                                     document.body.classList.contains('light-mode') ||
-                                    document.documentElement.classList.contains('light-mode')
-                                    ? 'fas fa-moon' : 'fas fa-sun';
+                                        document.documentElement.classList.contains('light-mode')
+                                        ? 'fas fa-moon' : 'fas fa-sun';
                             })();
                         </script>
                     </button>
@@ -253,8 +256,7 @@
                 </div>
                 <span>Tevékenységek</span>
             </a>
-            <a href="about"
-                class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
+            <a href="about" class="flex items-center gap-4 text-gray-300 hover:text-neon-cyan transition duration-300">
                 <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                     <i class="fas fa-info-circle"></i>
                 </div>
@@ -270,7 +272,8 @@
         </div>
 
         <div class="mt-auto pt-10 border-t border-white/10 flex justify-center">
-            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo" class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
+            <img src="assets/images/vektoros-logo.svg" alt="ABOVE Foundation Logo"
+                class="mobile-menu-logo max-w-[150px] w-full h-auto opacity-80">
         </div>
     </div>
 
@@ -310,19 +313,24 @@
     <!-- Main Content -->
     <main class="w-full px-6 pt-32 pb-16">
         <div class="max-w-4xl mx-auto w-full">
-            <h1 class="text-4xl md:text-5xl font-montserrat font-bold text-center gradient-text mb-12">Jövőbeli Projektek</h1>
-            
+            <h1 class="text-4xl md:text-5xl font-montserrat font-bold text-center gradient-text mb-12">Jövőbeli
+                Projektek</h1>
+
             <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
                 <!-- Nincs aktív projekt állapot -->
-                <div class="glass-strong rounded-3xl p-10 md:p-12 border border-neon-cyan/30 shadow-2xl text-center fade-in visible">
-                    <div class="w-16 h-16 rounded-2xl bg-neon-cyan/10 border border-neon-cyan/30 flex items-center justify-center text-neon-cyan mx-auto mb-6">
+                <div
+                    class="glass-strong rounded-3xl p-10 md:p-12 border border-neon-cyan/30 shadow-2xl text-center fade-in visible">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-neon-cyan/10 border border-neon-cyan/30 flex items-center justify-center text-neon-cyan mx-auto mb-6">
                         <i class="fas fa-compass text-3xl"></i>
                     </div>
                     <h2 class="text-2xl font-montserrat font-bold text-white mb-3">Hamarosan új lehetőségek!</h2>
                     <p class="text-gray-300 leading-relaxed max-w-md mx-auto mb-8 text-sm md:text-base">
-                        Jelenleg nincs aktív jelentkezési időszak. Kövesd oldalunkat és közösségi felületeinket a legfrissebb felhívásokért!
+                        Jelenleg nincs aktív jelentkezési időszak. Kövesd oldalunkat és közösségi felületeinket a
+                        legfrissebb felhívásokért!
                     </p>
-                    <a href="projects" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal px-8 py-3.5 rounded-full font-bold hover:shadow-[0_0_30px_rgba(0,188,212,0.5)] transition duration-300 text-sm">
+                    <a href="projects"
+                        class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-neon-cyan to-neon-teal text-dark-teal px-8 py-3.5 rounded-full font-bold hover:shadow-[0_0_30px_rgba(0,188,212,0.5)] transition duration-300 text-sm">
                         <i class="fas fa-arrow-left"></i>
                         <span>Vissza a tevékenységekhez</span>
                     </a>
@@ -361,10 +369,11 @@
                 <div class="flex flex-col items-center">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-center">Oldalak</h4>
                     <ul class="grid grid-cols-2 gap-x-8 gap-y-3 w-fit text-center">
-                        <li><a href="/"
-                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a></li>
+                        <li><a href="/" class="text-gray-400 hover:text-neon-cyan transition duration-300">Kezdőlap</a>
+                        </li>
                         <li><a href="projects"
-                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a></li>
+                                class="text-gray-400 hover:text-neon-cyan transition duration-300">Tevékenységek</a>
+                        </li>
 
                         <li><a href="about"
                                 class="text-gray-400 hover:text-neon-cyan transition duration-300">Rólunk</a></li>
@@ -375,12 +384,14 @@
                 <div class="md:justify-self-end md:mr-8 lg:mr-12 text-left">
                     <h4 class="text-lg font-montserrat font-bold text-neon-cyan mb-4 text-right">Kapcsolat</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="mailto:info@abovefoundation.eu" class="hover:text-neon-cyan transition duration-300"><i class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
+                        <li><a href="mailto:info@abovefoundation.eu"
+                                class="hover:text-neon-cyan transition duration-300"><i
+                                    class="fas fa-envelope mr-2 text-neon-cyan"></i>info@abovefoundation.eu</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-neon-cyan/20 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 ABOVE Foundation. Minden jog fenntartva.</p>
+                <p>&copy; 2026 ABOVE Foundation. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
@@ -436,13 +447,13 @@
             const btn = document.getElementById('theme-toggle');
             if (!btn) return;
             const icon = btn.querySelector('i');
-            
+
             if (document.body.classList.contains('light-mode')) {
                 icon.className = 'fas fa-moon';
             } else {
                 icon.className = 'fas fa-sun';
             }
-            
+
             btn.addEventListener('click', () => {
                 const isLight = document.body.classList.toggle('light-mode');
                 icon.className = isLight ? 'fas fa-moon' : 'fas fa-sun';

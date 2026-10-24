@@ -14,18 +14,18 @@
     // ─── Common translations shared across all pages ──────────────────────────
     var commonTranslations = {
         // Navigation
-        'Kezdőlap':                 'Home',
-        'Tevékenységek':            'Activities',
-        'Rólunk':                   'About Us',
-        'Kapcsolat':                'Contact',
-        'Menü':                     'Menu',
+        'Kezdőlap': 'Home',
+        'Tevékenységek': 'Activities',
+        'Rólunk': 'About Us',
+        'Kapcsolat': 'Contact',
+        'Menü': 'Menu',
         'EuroSpeak Nyári Tábor 2026': 'EuroSpeak Summer Camp 2026',
         // Footer
-        'Közösségi média':          'Socials',
-        'Elérhetőségek':            'Contact Us',
-        'Oldalak':                  'Pages',
+        'Közösségi média': 'Socials',
+        'Elérhetőségek': 'Contact Us',
+        'Oldalak': 'Pages',
         'Szakmai partnereink és támogatóink': 'Our Professional Partners and Supporters',
-        '© 2025 ABOVE Foundation. Minden jog fenntartva.': '© 2025 ABOVE Foundation. All rights reserved.',
+        '© 2026 ABOVE Foundation. Minden jog fenntartva.': '© 2026 ABOVE Foundation. All rights reserved.',
     };
 
     // Merge common + page-specific translations
@@ -72,7 +72,7 @@
             var orig = tn.nodeValue;
             var norm = orig.trim().replace(/\s+/g, ' ');
             if (dict[norm] !== undefined) {
-                var leading  = orig.match(/^\s*/)[0];
+                var leading = orig.match(/^\s*/)[0];
                 var trailing = orig.match(/\s*$/)[0];
                 tn.nodeValue = leading + dict[norm] + trailing;
             }
@@ -80,12 +80,12 @@
 
         // Translate placeholders
         if (root.querySelectorAll) {
-            root.querySelectorAll('[placeholder]').forEach(function(input) {
+            root.querySelectorAll('[placeholder]').forEach(function (input) {
                 if (input.closest('[data-no-translate]')) return;
                 var orig = input.getAttribute('placeholder');
                 var norm = orig.trim().replace(/\s+/g, ' ');
                 if (dict[norm] !== undefined) {
-                    var leading  = orig.match(/^\s*/)[0];
+                    var leading = orig.match(/^\s*/)[0];
                     var trailing = orig.match(/\s*$/)[0];
                     input.setAttribute('placeholder', leading + dict[norm] + trailing);
                 }
@@ -112,14 +112,14 @@
                 originalTexts.set(n, orig);
             } else if (reverseTranslations[norm] !== undefined) {
                 // Node was already translated (e.g. Nav translated to EN by immediate script before lang.js ran)
-                var leading  = orig.match(/^\s*/)[0];
+                var leading = orig.match(/^\s*/)[0];
                 var trailing = orig.match(/\s*$/)[0];
                 originalTexts.set(n, leading + reverseTranslations[norm] + trailing);
             }
         }
 
         // Snapshot placeholders
-        document.querySelectorAll('[placeholder]').forEach(function(input) {
+        document.querySelectorAll('[placeholder]').forEach(function (input) {
             if (input.closest('[data-no-translate]')) return;
             var ph = input.getAttribute('placeholder');
             var norm = ph.trim().replace(/\s+/g, ' ');
@@ -127,7 +127,7 @@
                 if (translations[norm] !== undefined) {
                     originalPlaceholders.set(input, ph);
                 } else if (reverseTranslations[norm] !== undefined) {
-                    var leading  = ph.match(/^\s*/)[0];
+                    var leading = ph.match(/^\s*/)[0];
                     var trailing = ph.match(/\s*$/)[0];
                     originalPlaceholders.set(input, leading + reverseTranslations[norm] + trailing);
                 }
@@ -145,7 +145,7 @@
         document.querySelectorAll('a').forEach(function (link) {
             var href = link.getAttribute('href');
             if (!href) return;
-            
+
             // Check if it's an internal link
             // We only translate links like "/", "projects", "about", "contact", etc.
             // and exclude external links (http), hashes (#), mailto/tel, and javascript:.
@@ -211,32 +211,32 @@
     if (window.location.protocol !== 'file:') {
         var pathname = window.location.pathname;
         var searchParams = new URLSearchParams(window.location.search);
-        
+
         // 1. Check query parameter first (used by 404.html redirect)
         if (searchParams.has('lang')) {
             currentLang = searchParams.get('lang') === 'en' ? 'en' : 'hu';
             localStorage.setItem('lang', currentLang);
-        } 
+        }
         // 2. Check path-based language prefix
         else if (pathname.startsWith('/en/') || pathname === '/en') {
             currentLang = 'en';
             localStorage.setItem('lang', 'en');
-        } 
+        }
         // 3. Fallback to localStorage
         else {
             currentLang = localStorage.getItem('lang') || 'hu';
         }
-        
+
         // Rewrite URL pathname in browser address bar to clean URLs (removes .html and params)
         if (searchParams.has('lang') || searchParams.has('p') || pathname.endsWith('.html')) {
             var cleanPageName = pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
             if (cleanPageName === 'index') cleanPageName = '';
-            
+
             var route = '';
             if (cleanPageName === 'projects') {
                 route = searchParams.get('p') || '';
             }
-            
+
             // Build the clean pathname
             var cleanPath = '';
             if (currentLang === 'en') {
@@ -249,11 +249,11 @@
                 }
             }
             if (!cleanPath) cleanPath = '/';
-            
+
             // Reconstruct search (excluding p and lang)
             searchParams.delete('p');
             searchParams.delete('lang');
-            
+
             var origQuery = '';
             if (searchParams.has('q')) {
                 origQuery = '?' + decodeURIComponent(searchParams.get('q'));
@@ -261,7 +261,7 @@
                 var searchStr = searchParams.toString();
                 origQuery = searchStr ? '?' + searchStr : '';
             }
-            
+
             history.replaceState(null, '', cleanPath + origQuery + window.location.hash);
         }
     } else {
@@ -289,7 +289,7 @@
         toggle.addEventListener('click', function () {
             currentLang = currentLang === 'hu' ? 'en' : 'hu';
             localStorage.setItem('lang', currentLang);
-            
+
             // Update URL dynamically if on http/https
             if (window.location.protocol !== 'file:') {
                 let pathname = window.location.pathname;
