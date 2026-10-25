@@ -500,6 +500,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="ctrlfact">
+                        <div class="relative h-80">
+                            <img src="assets/images/ctrlfact_1.jpg" alt="CTRL + FACT"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">CTRL + FACT
+                                </h3>
+                                <p class="text-gray-300 text-sm">Lengyelország, Katowice · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="yoga4all">
                         <div class="relative h-80">
                             <img src="assets/images/yoga4all_1.jpg" alt="YOGA4ALL"
@@ -3501,6 +3517,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/ctrlfact_1.jpg',
                 'assets/images/yoga4all_1.jpg',
                 'assets/images/PBA_1.jpg',
                 'assets/images/storytelling_1.jpg',
@@ -4101,6 +4118,21 @@
 
         // Project data
         const projectData = {
+            "ctrlfact": {
+                image: "assets/images/ctrlfact_1.jpg",
+                objectPosition: "center 30%",
+                location: "Lengyelország, Katowice",
+                title: "CTRL + FACT",
+                shortDescription: "Lengyelországban, Katowicében vettünk részt a CTRL + FACT Erasmus+ ifjúsági cserén, ahol a médiaműveltség, a mesterséges intelligencia és a tényellenőrzés került a középpontba.",
+                description: "Lengyelországban, Katowicében vettünk részt a CTRL + FACT Erasmus+ ifjúsági cserén, ahol a médiaműveltség, a mesterséges intelligencia és a tényellenőrzés került a középpontba.\n\nA projektet a lengyel Instytut Inicjatyw Lokalnych szervezte. Több európai ország fiataljaival együtt azt vizsgáltuk, hogyan alakítják az algoritmusok, a közösségi média és az AI által generált tartalmak azt, amit online látunk, olvasunk és elhiszünk.\n\nA hét során interaktív workshopokon, szimulációkon és közös feladatokon keresztül foglalkoztunk a félretájékoztatással és a digitális ökoszisztémával, a manipuláció mögötti pszichológiai mechanizmusokkal, a mesterséges intelligencia információformáló szerepével, valamint a médiakeretezés demokráciára gyakorolt hatásával. Megtanultuk, hogyan ellenőrizhetjük az információkat, és hogyan ismerhetjük fel a deepfake-eket és a manipulatív tartalmakat. A program csúcspontja egy oxfordi vita volt, ahol a tanultakat a gyakorlatban is kipróbálhattuk.\n\nA szakmai munka mellett egymás megismerése is fontos szerepet kapott. A kulturális esten az egyes nemzeti csoportok bemutatták hazájuk hagyományait, ételeit és zenéjét, a hét végén pedig Youthpass tanúsítványt kaptunk a megszerzett kompetenciákról.\n\nA projekt megerősítette bennünk, hogy a digitális térben mindannyian felelősek vagyunk azért, mit hiszünk el és mit osztunk meg, és hogy a kritikus gondolkodás ma talán fontosabb, mint valaha.",
+                gallery: [
+                    "assets/images/ctrlfact_1.jpg",
+                    "assets/images/ctrlfact_2.jpg",
+                    "assets/images/ctrlfact_3.jpg",
+                    "assets/images/ctrlfact_4.jpg",
+                    "assets/images/ctrlfact_5.jpg"
+                ]
+            },
             "yoga4all": {
                 image: "assets/images/yoga4all_1.jpg",
                 objectPosition: "center center",
@@ -5308,6 +5340,7 @@
             'Felejthetetlen nyári élmények, ahol játszva tanulhatsz, és életre szóló barátságokat köthetsz a természet ölelésében.':
                 'Unforgettable summer experiences where you can learn through play and make lifelong friendships in the embrace of nature.',
             // Foreign projects view
+            'Lengyelország, Katowice · 2026': 'Poland, Katowice · 2026',
             'Litvánia, Vilnius · 2026': 'Lithuania, Vilnius · 2026',
             'Vissza a projektekhez': 'Back to projects',
             'Nemzetközi Projektek\n                    ': 'International Projects\n                    ',
@@ -5659,6 +5692,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "ctrlfact": {
+                location: "Poland, Katowice",
+                title: "CTRL + FACT",
+                shortDescription: "We took part in the CTRL + FACT Erasmus+ youth exchange in Katowice, Poland, focusing on media literacy, artificial intelligence and fact-checking.",
+                description: "We took part in the CTRL + FACT Erasmus+ youth exchange in Katowice, Poland, focusing on media literacy, artificial intelligence and fact-checking.\n\nThe project was organised by the Polish NGO Instytut Inicjatyw Lokalnych. Together with young people from several European countries, we explored how algorithms, social media and AI-generated content shape what we see, read and believe online.\n\nThroughout the week, through interactive workshops, simulations and group tasks, we worked on misinformation and the digital ecosystem, the psychological mechanisms behind manipulation, the role of artificial intelligence in transforming information, and the impact of media framing on democracy. We learned how to verify information and recognise deepfakes and manipulative content. A highlight of the programme was an Oxford-style debate, where we put what we had learned into practice.\n\nAlongside the workshops, getting to know each other played an important role. During the intercultural evening, each national group presented its traditions, food and music, and at the end of the week we received Youthpass certificates recognising the competences we had gained.\n\nThe project reminded us that in digital spaces we are all responsible for what we believe and share, and that critical thinking is perhaps more important today than ever."
+            },
             "yoga4all": {
                 location: "Lithuania, Vilnius",
                 title: "YOGA4ALL",
@@ -6052,4 +6091,4 @@
 
 </body>
 
-</html>
+</html>
