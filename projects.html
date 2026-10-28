@@ -500,6 +500,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="connection">
+                        <div class="relative h-80">
+                            <img src="assets/images/connection_5.jpg" alt="CONNECTION"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">CONNECTION
+                                </h3>
+                                <p class="text-gray-300 text-sm">Olaszország, Trento · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="ctrlfact">
                         <div class="relative h-80">
                             <img src="assets/images/ctrlfact_1.jpg" alt="CTRL + FACT"
@@ -3576,6 +3592,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/connection_5.jpg',
                 'assets/images/ctrlfact_1.jpg',
                 'assets/images/yoga4all_1.jpg',
                 'assets/images/PBA_1.jpg',
@@ -4177,6 +4194,22 @@
 
         // Project data
         const projectData = {
+            "connection": {
+                image: "assets/images/connection_5.jpg",
+                objectPosition: "center center",
+                location: "Olaszország, Trento",
+                title: "CONNECTION",
+                shortDescription: "Olaszországban, Trentóban vettünk részt a CONNECTION: on wellbeing and mental health Erasmus+ ifjúsági cserén, ahol a mentális egészség, a jóllét és a test-elme kapcsolat került a középpontba.",
+                description: "Olaszországban, Trentóban vettünk részt a CONNECTION: on wellbeing and mental health Erasmus+ ifjúsági cserén, ahol a mentális egészség, a jóllét és a test-elme kapcsolat került a középpontba.\n\nA projektet a hegyvidéki Candriai területén szervezték. Több európai ország fiataljaival együtt azt vizsgáltuk, hogyan hozhatunk létre erősebb kötelékeket önmagunkkal és a közösségünkkel, valamint hogyan sajátíthatunk el egészséges szokásokat.\n\nA hét során interaktív workshopokon keresztül foglalkoztunk az érzelmeink megértésével: volt kollázskészítés, kreatív írás, fotózás, valamint erdei fürdőzés és mindfulness meditáció a Malga Brigolina felé vezető túrán. A program egyik kiemelt csúcspontja a Poplar zenei fesztiválon való részvétel volt, ahol a résztvevők a témához kapcsolódó saját aktivitásokkal mutatkoztak be.\n\nA szakmai program mellett a kulturális élmények is fontos szerepet kaptak: önellátó módon, közös főzésekkel és nemzetközi estekkel kísértük végig a napokat, a hét végén pedig mindenki Youthpass tanúsítványt kapott a megszerzett kompetenciákról.\n\nA projekt megerősítette bennünk, hogy a belső egyensúly, a természetközeliség és a mentális egészség ápolása alapvető kulcs a mindennapi jólléthez.",
+                gallery: [
+                    "assets/images/connection_1.jpg",
+                    "assets/images/connection_2.jpg",
+                    "assets/images/connection_3.jpg",
+                    "assets/images/connection_4.jpg",
+                    "assets/images/connection_5.jpg",
+                    "assets/images/connection_6.jpg"
+                ]
+            },
             "ctrlfact": {
                 image: "assets/images/ctrlfact_1.jpg",
                 objectPosition: "center 30%",
@@ -5408,6 +5441,7 @@
             'Felejthetetlen nyári élmények, ahol játszva tanulhatsz, és életre szóló barátságokat köthetsz a természet ölelésében.':
                 'Unforgettable summer experiences where you can learn through play and make lifelong friendships in the embrace of nature.',
             // Foreign projects view
+            'Olaszország, Trento · 2026': 'Italy, Trento · 2026',
             'Lengyelország, Katowice · 2026': 'Poland, Katowice · 2026',
             'Franciaország, Bédeille · 2026': 'France, Bédeille · 2026',
             'Ciprus, Larnaka · 2026': 'Cyprus, Larnaca · 2026',
@@ -5770,6 +5804,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "connection": {
+                location: "Italy, Trento",
+                title: "CONNECTION",
+                shortDescription: "We participated in the CONNECTION: on wellbeing and mental health Erasmus+ youth exchange in Trento, Italy, focusing on mental health, well-being, and the mind-body connection.",
+                description: "We participated in the CONNECTION: on wellbeing and mental health Erasmus+ youth exchange in Trento, Italy, focusing on mental health, well-being, and the mind-body connection.\n\nThe project took place in the mountainous area of Candriai. Together with young people from several European countries, we explored how to build stronger bonds with ourselves and our communities, as well as how to cultivate healthy habits.\n\nThroughout the week, through interactive workshops, we focused on understanding our emotions: activities included collage making, creative writing, photography, as well as forest bathing and mindfulness meditation during a hike towards Malga Brigolina. One of the highlights of the programme was participating in the Poplar music festival, where participants presented their own activities related to the theme.\n\nAlongside the educational sessions, cultural experiences also played a key role: we spent the days self-catering with shared cooking and international evenings, and at the end of the week everyone received a Youthpass certificate recognizing the competences acquired.\n\nThe project reinforced that inner balance, closeness to nature, and nurturing mental health are essential keys to everyday well-being."
+            },
             "ctrlfact": {
                 location: "Poland, Katowice",
                 title: "CTRL + FACT",
