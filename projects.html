@@ -500,6 +500,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="commonground">
+                        <div class="relative h-80">
+                            <img src="assets/images/commonground_1.jpg" alt="Common Ground"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">Common Ground
+                                </h3>
+                                <p class="text-gray-300 text-sm">Olaszország, Siena · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="wordsdeeds">
                         <div class="relative h-80">
                             <img src="assets/images/wordsdeeds_1.jpg" alt="Words&amp;Deeds"
@@ -3797,6 +3813,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/commonground_1.jpg',
                 'assets/images/wordsdeeds_1.jpg',
                 'assets/images/connection_5.jpg',
                 'assets/images/ctrlfact_1.jpg',
@@ -4426,6 +4443,22 @@
 
         // Project data
         const projectData = {
+            "commonground": {
+                image: "assets/images/commonground_1.jpg",
+                objectPosition: "center 70%",
+                location: "Olaszország, Siena",
+                title: "Common Ground",
+                shortDescription: "Olaszországban, Sienában vettünk részt a Common Ground: Architects of the Future Erasmus+ tréningen, ahol azon dolgoztunk, hogyan tehetjük az ifjúsági munkát befogadóbbá és interkulturálisan tudatosabbá.",
+                description: "Olaszországban, Sienában vettünk részt a Common Ground: Architects of the Future Erasmus+ tréningen, ahol azon dolgoztunk, hogyan tehetjük az ifjúsági munkát befogadóbbá és interkulturálisan tudatosabbá.\n\nA képzést az olasz BRISA Italia szervezte. Európa több országából érkező ifjúsági szakemberekkel közösen kerestük a választ arra, hogyan erősíthetjük a párbeszédet, a kölcsönös tiszteletet és a társadalmi összetartozást a fiatalok körében, és hogyan léphetünk fel a nacionalizmussal, az idegengyűlölettel és a diszkriminációval szemben.\n\nA hét során nem-formális módszerekkel, interaktív gyakorlatokon keresztül foglalkoztunk az identitással és a kommunikációval, a nacionalizmussal és a társadalmi polarizációval, valamint a közös európai értékekkel. Különösen elgondolkodtató volt a „Privilege Walk”, a saját előítéleteinkkel szembesítő „Backpack Exercise” és a „European Values Café”. A program csúcspontja egy „Policy Hackathon” volt, ahol saját workshop-terveket és javaslatokat dolgoztunk ki.\n\nA tréning előtt Pisát és Firenzét is meglátogattuk, Sienában pedig szerencsénkre épp a híres Palio idején voltunk, így testközelből láthattuk a lóversenyt és az azt követő ünneplést. Az interkulturális esten bemutattuk egymásnak országaink hagyományait és ízeit, a közös esték pedig gyorsan összekovácsolták a csapatot.\n\nA hét végén Youthpass tanúsítványt kaptunk, és rengeteg új módszerrel, ötlettel és barátsággal tértünk haza, amelyeket a saját ifjúsági munkánkban is kamatoztathatunk.",
+                gallery: [
+                    "assets/images/commonground_1.jpg",
+                    "assets/images/commonground_2.jpg",
+                    "assets/images/commonground_3.jpg",
+                    "assets/images/commonground_4.jpg",
+                    "assets/images/commonground_5.jpg",
+                    "assets/images/commonground_6.jpg"
+                ]
+            },
             "wordsdeeds": {
                 image: "assets/images/wordsdeeds_1.jpg",
                 objectPosition: "center 70%",
@@ -5689,6 +5722,7 @@
             'Felejthetetlen nyári élmények, ahol játszva tanulhatsz, és életre szóló barátságokat köthetsz a természet ölelésében.':
                 'Unforgettable summer experiences where you can learn through play and make lifelong friendships in the embrace of nature.',
             // Foreign projects view
+            'Olaszország, Siena · 2026': 'Italy, Siena · 2026',
             'Olaszország, Trento · 2026': 'Italy, Trento · 2026',
             'Lengyelország, Katowice · 2026': 'Poland, Katowice · 2026',
             'Franciaország, Bédeille · 2026': 'France, Bédeille · 2026',
@@ -6077,6 +6111,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "commonground": {
+                location: "Italy, Siena",
+                title: "Common Ground",
+                shortDescription: "We took part in the Common Ground: Architects of the Future Erasmus+ training course in Siena, Italy, working on how to make youth work more inclusive and interculturally aware.",
+                description: "We took part in the Common Ground: Architects of the Future Erasmus+ training course in Siena, Italy, working on how to make youth work more inclusive and interculturally aware.\n\nThe training was organised by the Italian organisation BRISA Italia. Together with youth workers from across Europe, we explored how to strengthen dialogue, mutual respect and social cohesion among young people, and how to respond to nationalism, xenophobia and discrimination.\n\nThroughout the week, using non-formal methods and interactive exercises, we worked on identity and communication, nationalism and social polarisation, and shared European values. The \"Privilege Walk\", the \"Backpack Exercise\" that confronted us with our own prejudices, and the \"European Values Café\" were especially thought-provoking. The highlight of the programme was a \"Policy Hackathon\", where we developed our own workshop plans and proposals.\n\nBefore the training we also visited Pisa and Florence, and in Siena we were lucky enough to arrive during the famous Palio, so we could experience the horse race and the celebrations that followed up close. During the intercultural evening we introduced each other to our countries' traditions and flavours, and the evenings together quickly brought the group together.\n\nAt the end of the week we received Youthpass certificates and returned home with plenty of new methods, ideas and friendships that we can put to use in our own youth work."
+            },
             "wordsdeeds": {
                 location: "Poland, Poronin",
                 title: "Words&Deeds",
