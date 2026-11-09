@@ -500,6 +500,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="wordsdeeds">
+                        <div class="relative h-80">
+                            <img src="assets/images/wordsdeeds_1.jpg" alt="Words&amp;Deeds"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">Words&amp;Deeds
+                                </h3>
+                                <p class="text-gray-300 text-sm">Lengyelország, Poronin · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="connection">
                         <div class="relative h-80">
                             <img src="assets/images/connection_5.jpg" alt="CONNECTION"
@@ -3781,6 +3797,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/wordsdeeds_1.jpg',
                 'assets/images/connection_5.jpg',
                 'assets/images/ctrlfact_1.jpg',
                 'assets/images/yoga4all_1.jpg',
@@ -4409,6 +4426,22 @@
 
         // Project data
         const projectData = {
+            "wordsdeeds": {
+                image: "assets/images/wordsdeeds_1.jpg",
+                objectPosition: "center 70%",
+                location: "Lengyelország, Poronin",
+                title: "Words&Deeds",
+                shortDescription: "Lengyelországban, a Tátra lábánál fekvő Poroninban vettünk részt a Words&Deeds Erasmus+ ifjúsági cserén, ahol az ökológia, a demokrácia és a digitális készségek kapcsolódási pontjait fedeztük fel.",
+                description: "Lengyelországban, a Tátra lábánál fekvő Poroninban vettünk részt a Words&Deeds Erasmus+ ifjúsági cserén, ahol az ökológia, a demokrácia és a digitális készségek kapcsolódási pontjait fedeztük fel.\n\nA projektet a lengyel Yellow Sheep szervezte. Lengyel, észt és magyar fiatalokkal együtt azt vizsgáltuk, hogyan kapcsolódik össze a környezetvédelem, az európai értékek és a nyílt párbeszéd a mindennapjainkban.\n\nA program különlegessége az volt, hogy a workshopokat nem trénerek, hanem mi magunk, a résztvevők készítettük elő és vezettük. Minden nemzeti csapat saját témát kapott, a módszereket és a feladatokat pedig mi találtuk ki. A hét során a saját mindennapi szokásainkból kiindulva foglalkoztunk az ökológiával, megtanultuk felismerni a klímával kapcsolatos dezinformációt és ellenőrizni az online információkat, valamint digitális tartalmakat, reelseket és videókat készítettünk a projekt témáiról.\n\nHelyi erdészekkel ellátogattunk egy természetvédelmi területre, ahol testközelből ismerhettük meg a térség élővilágát. Az oxfordi vita módszerét egész héten gyakoroltuk, a program csúcspontja pedig egy nyilvános vita volt a poronini kulturális központban.\n\nA szakmai munka mellett a nemzetközi esten bemutattuk egymásnak országaink hagyományait, ételeit és kultúráját, és új barátságokat kötöttünk. A projekt megmutatta, hogy a szavak és a tettek akkor erősek igazán, ha összhangban vannak egymással.",
+                gallery: [
+                    "assets/images/wordsdeeds_1.jpg",
+                    "assets/images/wordsdeeds_2.jpg",
+                    "assets/images/wordsdeeds_3.jpg",
+                    "assets/images/wordsdeeds_4.jpg",
+                    "assets/images/wordsdeeds_5.jpg",
+                    "assets/images/wordsdeeds_6.jpg"
+                ]
+            },
             "connection": {
                 image: "assets/images/connection_5.jpg",
                 objectPosition: "center center",
@@ -6044,6 +6077,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "wordsdeeds": {
+                location: "Poland, Poronin",
+                title: "Words&Deeds",
+                shortDescription: "We took part in the Words&Deeds Erasmus+ youth exchange in Poronin, Poland, at the foot of the Tatra Mountains, exploring how ecology, democracy and digital skills connect.",
+                description: "We took part in the Words&Deeds Erasmus+ youth exchange in Poronin, Poland, at the foot of the Tatra Mountains, exploring how ecology, democracy and digital skills connect.\n\nThe project was organised by the Polish organisation Yellow Sheep. Together with young people from Poland, Estonia and Hungary, we explored how environmental protection, European values and open dialogue are linked in our everyday lives.\n\nWhat made the programme special was that the workshops were not run by trainers but prepared and led by us, the participants. Each national team was given its own topics, and we designed the methods and activities ourselves. Throughout the week, we explored ecology starting from our own daily habits, learned to recognise climate disinformation and verify information online, and created digital content, including reels and videos, about the project topics.\n\nTogether with local foresters, we visited a nature reserve and got to know the region's natural environment up close. We practised Oxford-style debating all week, and the highlight of the programme was a public debate at the cultural centre in Poronin.\n\nAlongside the workshops, during the international evening we introduced each other to our countries' traditions, food and culture, and built new friendships. The project showed us that words and deeds are at their strongest when they go hand in hand."
+            },
             "connection": {
                 location: "Italy, Trento",
                 title: "CONNECTION",
