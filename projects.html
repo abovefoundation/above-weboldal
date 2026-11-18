@@ -500,6 +500,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
+                        data-project="ruralmakers">
+                        <div class="relative h-80">
+                            <img src="assets/images/ruralmakers_2.jpg" alt="RuralMakers 3.0"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 project-card-overlay group-hover:bg-neon-cyan/10 transition duration-300">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+                                <h3 class="text-2xl font-montserrat font-bold text-white mb-2 line-clamp-2">RuralMakers
+                                    3.0</h3>
+                                <p class="text-gray-300 text-sm">Spanyolország, Valdeorras · 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-strong rounded-3xl overflow-hidden hover-lift fade-in relative group cursor-pointer project-card"
                         data-project="connection">
                         <div class="relative h-80">
                             <img src="assets/images/connection_5.jpg" alt="CONNECTION"
@@ -3592,6 +3608,7 @@
         // Random background images for category cards
         (function () {
             var foreignCovers = [
+                'assets/images/ruralmakers_2.jpg',
                 'assets/images/connection_5.jpg',
                 'assets/images/ctrlfact_1.jpg',
                 'assets/images/yoga4all_1.jpg',
@@ -4194,6 +4211,21 @@
 
         // Project data
         const projectData = {
+            "ruralmakers": {
+                image: "assets/images/ruralmakers_2.jpg",
+                objectPosition: "center center",
+                location: "Spanyolország, Valdeorras",
+                title: "RuralMakers 3.0",
+                shortDescription: "Spanyolországban, Valdeorrasban vettünk részt a RuralMakers 3.0 képzésen, ahol azon dolgoztunk, hogyan lehet virágzó és fenntartható vállalkozásokat építeni vidéki környezetben.",
+                description: "Spanyolországban, Valdeorrasban vettünk részt a RuralMakers 3.0 képzésen, ahol azon dolgoztunk, hogyan lehet virágzó és fenntartható vállalkozásokat építeni vidéki környezetben. A július 4. és 10. között megrendezett tréningen nyolc különböző országból érkezett tizenhárom szakemberrel közösen kerestük a választ a vidéki térségekben rejlő üzleti lehetőségek kiaknázására.\n\nA hét során gyakorlati példákon és mélyreható szakmai bemutatókon keresztül foglalkoztunk a vidéki vállalkozásfejlesztés módszereivel és kihívásaival. A programok új perspektívát adtak a helyi erőforrásokra építő, innovatív üzleti modellek kialakításához.\n\nA szakmai munka mellett a nyitott és támogató közösség tette igazán emlékezetessé az együtt töltött időt, a közös programok pedig gyorsan összekovácsolták a nemzetközi csapatot.\n\nA hét végén rengeteg új szakmai ötlettel, friss szemlélettel és értékes nemzetközi kapcsolatokkal tértünk haza, amelyeket a saját munkánkban is kamatoztathatunk.",
+                gallery: [
+                    "assets/images/ruralmakers_1.jpg",
+                    "assets/images/ruralmakers_2.jpg",
+                    "assets/images/ruralmakers_3.jpg",
+                    "assets/images/ruralmakers_4.jpg",
+                    "assets/images/ruralmakers_5.jpg"
+                ]
+            },
             "connection": {
                 image: "assets/images/connection_5.jpg",
                 objectPosition: "center center",
@@ -5441,6 +5473,7 @@
             'Felejthetetlen nyári élmények, ahol játszva tanulhatsz, és életre szóló barátságokat köthetsz a természet ölelésében.':
                 'Unforgettable summer experiences where you can learn through play and make lifelong friendships in the embrace of nature.',
             // Foreign projects view
+            'Spanyolország, Valdeorras · 2026': 'Spain, Valdeorras · 2026',
             'Olaszország, Trento · 2026': 'Italy, Trento · 2026',
             'Lengyelország, Katowice · 2026': 'Poland, Katowice · 2026',
             'Franciaország, Bédeille · 2026': 'France, Bédeille · 2026',
@@ -5804,6 +5837,12 @@
 
         // ── English project data (used by renderProjectModal when lang==='en') ──
         window.projectDataEn = {
+            "ruralmakers": {
+                location: "Spain, Valdeorras",
+                title: "RuralMakers 3.0",
+                shortDescription: "We participated in the RuralMakers 3.0 training course in Valdeorras, Spain, working on how to build thriving and sustainable businesses in rural environments.",
+                description: "We participated in the RuralMakers 3.0 training course in Valdeorras, Spain, working on how to build thriving and sustainable businesses in rural environments. At the training held between July 4 and 10, together with thirteen professionals from eight different countries, we explored ways to unlock business opportunities in rural areas.\n\nThroughout the week, we examined the methods and challenges of rural business development through practical examples and in-depth professional presentations. The sessions offered new perspectives on creating innovative business models that build on local resources.\n\nAlongside the professional work, the open and supportive community made our time together truly memorable, and the shared activities quickly brought the international team closer.\n\nAt the end of the week, we returned home with plenty of new professional ideas, a fresh outlook, and valuable international connections that we can also put to good use in our own work."
+            },
             "connection": {
                 location: "Italy, Trento",
                 title: "CONNECTION",
