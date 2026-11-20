@@ -152,6 +152,11 @@
             var isInternal = !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('javascript:');
             if (!isInternal) return;
 
+            // Files (PDFs, images, etc. in assets/) must keep their original path,
+            // otherwise "/en/assets/..." would be a 404 in English mode.
+            var cleanHref = href.split('?')[0].split('#')[0];
+            if (/^\/?assets\//.test(cleanHref) || /\.(pdf|jpe?g|png|webp|gif|svg|zip|docx?|xlsx?|pptx?)$/i.test(cleanHref)) return;
+
             // Normalize path: e.g. "projects" -> "/projects"
             var path = href.startsWith('/') ? href : '/' + href;
 
